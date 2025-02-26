@@ -282,7 +282,7 @@ const PopularTours = () => {
             {destinations[activeTab].map((tour, index) => (
               <div
                 key={index}
-                className="min-w-[500px] sm:min-w-[350px] bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 snap-start"
+                className="min-w-[300px] sm:min-w-[320px] bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 snap-start"
               >
                 <div 
                   className="h-48 bg-cover bg-center"
