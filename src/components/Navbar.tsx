@@ -23,10 +23,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <Anchor className="h-8 w-8 text-blue-600" />
-              <span className={`text-xl font-semibold ${isScrolled ? 'text-gray-900' : 'text-gray-900'}`}>
-                Coastal Elegance
-              </span>
+              <img src="/logo.png" className="h-16" />
             </Link>
           </div>
 
