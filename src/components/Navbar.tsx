@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-black/20 backdrop-blur-md shadow-lg' : 'bg-black/50'
+      isScrolled ? 'bg-black/20 backdrop-blur-md shadow-lg' : 'bg-white'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
@@ -29,16 +29,16 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className={`${isScrolled ? 'text-brand-brown' : 'text-white'} hover:text-brand-red transition`}>
+            <Link to="/" className={`${isScrolled ? 'text-brand-brown' : 'text-brand-brown'} hover:text-brand-red transition`}>
               Home
             </Link>
-            <Link to="/booking" className={`${isScrolled ? 'text-brand-brown' : 'text-white'} hover:text-brand-red transition`}>
+            <Link to="/booking" className={`${isScrolled ? 'text-brand-brown' : 'text-brand-brown'} hover:text-brand-red transition`}>
               Book Now
             </Link>
-            <Link to="/tender" className={`${isScrolled ? 'text-brand-brown' : 'text-white'} hover:text-brand-red transition`}>
+            <Link to="/tender" className={`${isScrolled ? 'text-brand-brown' : 'text-brand-brown'} hover:text-brand-red transition`}>
               For Hotels
             </Link>
-            <Link to="/contact" className={`${isScrolled ? 'text-brand-brown' : 'text-white'} hover:text-brand-red transition`}>
+            <Link to="/contact" className={`${isScrolled ? 'text-brand-brown' : 'text-brand-brown'} hover:text-brand-red transition`}>
               Contact
             </Link>
           </div>
@@ -47,7 +47,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`${isScrolled ? 'text-brand-brown' : 'text-white'} hover:text-brand-red focus:outline-none`}
+              className={`${isScrolled ? 'text-brand-brown' : 'text-brand-brown'} hover:text-brand-red focus:outline-none`}
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>

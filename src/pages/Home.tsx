@@ -70,21 +70,15 @@ const Home = () => {
           <p className="text-xl md:text-2xl mb-8 max-w-2xl animate-fade-in-delay">
             Experience the perfect blend of comfort, reliability, and sophistication with our premium shuttle services.
           </p>
-          <div className="flex flex-row sm:flex-col gap-4 animate-fade-in-delay-2">
-            <Link
-              to="/booking"
-              className="inline-flex items-center px-6 py-3 bg-brand-red hover:bg-brand-red/90 text-white rounded-lg transition-all duration-300 transform hover:scale-105"
-            >
-              Book Now
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-            <Link
-              to="/tender"
-              className="inline-flex items-center px-6 py-3 bg-white/20 backdrop-blur-md hover:bg-white/30 text-white rounded-lg transition-all duration-300 transform hover:scale-105"
-            >
-              Tender Services
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+          <div className="flex gap-4 animate-fade-in-delay-2">
+          <Link to="/booking" className="inline-flex items-center px-6 py-3 bg-brand-red hover:bg-brand-red/90 text-white rounded-lg transition-all duration-300 transform hover:scale-105" > 
+            <span className="text-xs md:text-base">Book Now</span>
+            <ArrowRight className="ml-2 h-5 w-5" /> 
+          </Link>
+          <Link to="/tender" className="inline-flex items-center px-6 py-3 bg-white/20 backdrop-blur-md hover:bg-white/30 text-white rounded-lg transition-all duration-300 transform hover:scale-105" > 
+            <span className="text-xs md:text-base">Tender Services</span>
+            <ArrowRight className="ml-2 h-5 w-5" /> 
+          </Link>
           </div>
         </div>
       </section>
