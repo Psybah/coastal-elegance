@@ -235,14 +235,14 @@ const PopularTours = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12">Popular South African Tours</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-brand-brown">Popular South African Tours</h2>
         
         <div className="flex justify-center mb-8">
           <div className="inline-flex rounded-lg border border-gray-200 bg-white p-1">
             <button
               onClick={() => setActiveTab('coastal')}
               className={`px-4 py-2 rounded-lg transition-all duration-300 ${
-                activeTab === 'coastal' ? 'bg-blue-600 text-white' : 'hover:bg-gray-100'
+                activeTab === 'coastal' ? 'bg-brand-red text-white' : 'hover:bg-gray-100 text-brand-brown'
               }`}
             >
               Coastal Tours
@@ -250,7 +250,7 @@ const PopularTours = () => {
             <button
               onClick={() => setActiveTab('city')}
               className={`px-4 py-2 rounded-lg transition-all duration-300 ${
-                activeTab === 'city' ? 'bg-blue-600 text-white' : 'hover:bg-gray-100'
+                activeTab === 'city' ? 'bg-brand-red text-white' : 'hover:bg-gray-100 text-brand-brown'
               }`}
             >
               City Tours
@@ -258,7 +258,7 @@ const PopularTours = () => {
             <button
               onClick={() => setActiveTab('wine')}
               className={`px-4 py-2 rounded-lg transition-all duration-300 ${
-                activeTab === 'wine' ? 'bg-blue-600 text-white' : 'hover:bg-gray-100'
+                activeTab === 'wine' ? 'bg-brand-red text-white' : 'hover:bg-gray-100 text-brand-brown'
               }`}
             >
               Wine Tours
@@ -271,7 +271,7 @@ const PopularTours = () => {
             onClick={() => scroll('left')}
             className="absolute -left-5 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 p-2 rounded-full shadow-lg hover:bg-white transition-all duration-300"
           >
-            <ChevronLeft className="h-6 w-6 text-gray-600" />
+            <ChevronLeft className="h-6 w-6 text-brand-brown" />
           </button>
           
           <div
@@ -289,21 +289,21 @@ const PopularTours = () => {
                   style={{ backgroundImage: `url(${tour.image})` }}
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{tour.name}</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-brand-brown">{tour.name}</h3>
                   <p className="text-gray-600 mb-4">{tour.description}</p>
                   <div className="flex items-center mb-2">
-                    <Clock className="h-5 w-5 text-gray-400 mr-2" />
+                    <Clock className="h-5 w-5 text-brand-gold mr-2" />
                     <span>{tour.time}</span>
                   </div>
                   <div className="flex items-center mb-4">
-                    <MapPin className="h-5 w-5 text-gray-400 mr-2" />
+                    <MapPin className="h-5 w-5 text-brand-gold mr-2" />
                     <span>Multiple Stops</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-2xl font-bold text-blue-600">{tour.price}</span>
+                    <span className="text-2xl font-bold text-brand-red">{tour.price}</span>
                     <Link
                       to="/booking"
-                      className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300"
+                      className="inline-flex items-center px-4 py-2 bg-brand-red text-white rounded-lg hover:bg-brand-red/90 transition-all duration-300"
                     >
                       Book Now
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -318,7 +318,7 @@ const PopularTours = () => {
             onClick={() => scroll('right')}
             className="absolute -right-5 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 p-2 rounded-full shadow-lg hover:bg-white transition-all duration-300"
           >
-            <ChevronRight className="h-6 w-6 text-gray-600" />
+            <ChevronRight className="h-6 w-6 text-brand-brown" />
           </button>
         </div>
       </div>

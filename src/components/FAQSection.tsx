@@ -60,7 +60,7 @@ const FAQSection = () => {
     <section className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-brand-brown mb-4">Frequently Asked Questions</h2>
           <p className="text-lg text-gray-600">Everything you need to know about our services</p>
         </div>
 
@@ -68,8 +68,8 @@ const FAQSection = () => {
           {faqs.map((category, index) => (
             <div key={index} className="bg-gray-50 rounded-lg p-6">
               <div className="flex items-center gap-3 mb-4">
-                <HelpCircle className="h-6 w-6 text-blue-600" />
-                <h3 className="text-xl font-semibold text-gray-900">{category.category}</h3>
+                <HelpCircle className="h-6 w-6 text-brand-red" />
+                <h3 className="text-xl font-semibold text-brand-brown">{category.category}</h3>
               </div>
               
               <div className="space-y-4">
@@ -79,9 +79,9 @@ const FAQSection = () => {
                     className="group bg-white rounded-lg transition-all duration-300 hover:shadow-md"
                   >
                     <summary className="flex justify-between items-center cursor-pointer p-4">
-                      <h4 className="text-lg font-medium pr-4">{faq.question}</h4>
+                      <h4 className="text-lg font-medium pr-4 text-brand-brown">{faq.question}</h4>
                       <span className="transition-transform duration-300 group-open:rotate-90">
-                        <ChevronRight className="h-5 w-5 text-gray-500" />
+                        <ChevronRight className="h-5 w-5 text-brand-gold" />
                       </span>
                     </summary>
                     <div className="px-4 pb-4">

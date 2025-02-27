@@ -27,25 +27,25 @@ const Contact = () => {
     <div className="pt-24 pb-16 min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
+          <h1 className="text-4xl font-bold text-brand-brown mb-4">Contact Us</h1>
           <p className="text-lg text-gray-600">We're here to help with your transportation needs</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Contact Information */}
           <div className="lg:col-span-1">
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+            <div className="bg-white rounded-lg shadow-lg p-8 border-t-4 border-brand-gold">
+              <h2 className="text-2xl font-bold text-brand-brown mb-6">Get in Touch</h2>
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <div className="bg-blue-100 rounded-full p-3">
-                      <Phone className="h-6 w-6 text-blue-600" />
+                    <div className="bg-brand-red/10 rounded-full p-3">
+                      <Phone className="h-6 w-6 text-brand-red" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1">Phone</h3>
+                    <h3 className="text-lg font-semibold mb-1 text-brand-brown">Phone</h3>
                     <p className="text-gray-600">+1 (555) 123-4567</p>
                     <p className="text-gray-600">Available 24/7</p>
                   </div>
@@ -53,12 +53,12 @@ const Contact = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <div className="bg-blue-100 rounded-full p-3">
-                      <Mail className="h-6 w-6 text-blue-600" />
+                    <div className="bg-brand-red/10 rounded-full p-3">
+                      <Mail className="h-6 w-6 text-brand-red" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1">Email</h3>
+                    <h3 className="text-lg font-semibold mb-1 text-brand-brown">Email</h3>
                     <p className="text-gray-600">info@coastalelegance.com</p>
                     <p className="text-gray-600">support@coastalelegance.com</p>
                   </div>
@@ -66,12 +66,12 @@ const Contact = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <div className="bg-blue-100 rounded-full p-3">
-                      <MapPin className="h-6 w-6 text-blue-600" />
+                    <div className="bg-brand-red/10 rounded-full p-3">
+                      <MapPin className="h-6 w-6 text-brand-red" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1">Address</h3>
+                    <h3 className="text-lg font-semibold mb-1 text-brand-brown">Address</h3>
                     <p className="text-gray-600">123 Coastal Drive</p>
                     <p className="text-gray-600">Marina Bay, CA 94111</p>
                   </div>
@@ -82,8 +82,8 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+            <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-lg p-8 border-t-4 border-brand-red">
+              <h2 className="text-2xl font-bold text-brand-brown mb-6">Send Us a Message</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -94,7 +94,7 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-gold focus:border-brand-gold"
                     required
                   />
                 </div>
@@ -107,7 +107,7 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-gold focus:border-brand-gold"
                     required
                   />
                 </div>
@@ -121,7 +121,7 @@ const Contact = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-gold focus:border-brand-gold"
                   required
                 />
               </div>
@@ -129,14 +129,14 @@ const Contact = () => {
               <div className="mt-6">
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
                 <div className="relative">
-                  <MessageSquare className="absolute left-3 top-3 text-gray-400 h-5 w-5" />
+                  <MessageSquare className="absolute left-3 top-3 text-brand-gold h-5 w-5" />
                   <textarea
                     id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
                     rows={6}
-                    className="w-full pl-10 px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full pl-10 px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-gold focus:border-brand-gold"
                     required
                   ></textarea>
                 </div>
@@ -145,7 +145,7 @@ const Contact = () => {
               <div className="mt-8">
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-200"
+                  className="inline-flex items-center justify-center w-full bg-brand-red text-white py-3 px-6 rounded-lg hover:bg-brand-red/90 transition duration-200"
                 >
                   Send Message
                   <Send className="ml-2 h-5 w-5" />

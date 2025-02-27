@@ -50,10 +50,10 @@ const Home = () => {
   ];
 
   return (
-    <div className="pt-16">
+    <div className="">
       {/* Hero Section */}
       <section 
-        className={`relative h-[90vh] bg-cover bg-center flex items-center transition-opacity duration-1000 ${
+        className={`relative h-[100vh] bg-cover bg-center flex items-center transition-opacity duration-1000 ${
           isVisible ? 'opacity-100' : 'opacity-0'
         }`}
         style={{
@@ -70,17 +70,17 @@ const Home = () => {
           <p className="text-xl md:text-2xl mb-8 max-w-2xl animate-fade-in-delay">
             Experience the perfect blend of comfort, reliability, and sophistication with our premium shuttle services.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-delay-2">
+          <div className="flex flex-row sm:flex-col gap-4 animate-fade-in-delay-2">
             <Link
               to="/booking"
-              className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 transform hover:scale-105"
+              className="inline-flex items-center px-6 py-3 bg-brand-red hover:bg-brand-red/90 text-white rounded-lg transition-all duration-300 transform hover:scale-105"
             >
               Book Now
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               to="/tender"
-              className="inline-flex items-center px-6 py-3 bg-white/10 hover:bg-white/30 backdrop-blur-5xl text-white rounded-lg transition-all duration-300 transform hover:scale-105"
+              className="inline-flex items-center px-6 py-3 bg-white/20 backdrop-blur-md hover:bg-white/30 text-white rounded-lg transition-all duration-300 transform hover:scale-105"
             >
               Tender Services
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -92,26 +92,26 @@ const Home = () => {
       {/* Services Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Premium Services</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-brand-brown">Our Premium Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2">
-              <Car className="h-12 w-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Airport Transfers</h3>
+            <div className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 border-t-4 border-brand-red">
+              <Car className="h-12 w-12 text-brand-red mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-brand-brown">Airport Transfers</h3>
               <p className="text-gray-600">Luxurious and punctual airport pickup and drop-off services.</p>
             </div>
-            <div className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2">
-              <Users className="h-12 w-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Group Tours</h3>
+            <div className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 border-t-4 border-brand-gold">
+              <Users className="h-12 w-12 text-brand-gold mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-brand-brown">Group Tours</h3>
               <p className="text-gray-600">Customized group tours along scenic coastal routes.</p>
             </div>
-            <div className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2">
-              <Calendar className="h-12 w-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Event Transport</h3>
+            <div className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 border-t-4 border-brand-red">
+              <Calendar className="h-12 w-12 text-brand-red mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-brand-brown">Event Transport</h3>
               <p className="text-gray-600">Reliable transportation for corporate events and weddings.</p>
             </div>
-            <div className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2">
-              <Shield className="h-12 w-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">VIP Services</h3>
+            <div className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 border-t-4 border-brand-gold">
+              <Shield className="h-12 w-12 text-brand-gold mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-brand-brown">VIP Services</h3>
               <p className="text-gray-600">Premium transportation with dedicated concierge support.</p>
             </div>
           </div>
@@ -124,7 +124,7 @@ const Home = () => {
       {/* Testimonials Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-brand-brown">What Our Clients Say</h2>
           <div className="relative">
             <div className="overflow-hidden py-10">
               <div
@@ -136,15 +136,15 @@ const Home = () => {
                     key={index}
                     className="w-full flex-shrink-0 px-4"
                   >
-                    <div className="bg-white p-8 rounded-lg shadow-md max-w-2xl mx-auto">
+                    <div className="bg-white p-8 rounded-lg shadow-md max-w-2xl mx-auto border-l-4 border-brand-gold">
                       <div className="flex mb-4">
                         {[...Array(testimonial.rating)].map((_, i) => (
-                          <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                          <Star key={i} className="h-5 w-5 text-brand-gold fill-current" />
                         ))}
                       </div>
                       <p className="text-gray-600 mb-6 text-lg italic">"{testimonial.text}"</p>
                       <div>
-                        <p className="font-semibold text-gray-900">{testimonial.name}</p>
+                        <p className="font-semibold text-brand-brown">{testimonial.name}</p>
                         <p className="text-gray-500">{testimonial.role}</p>
                       </div>
                     </div>
@@ -156,13 +156,13 @@ const Home = () => {
               onClick={() => setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length)}
               className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg hover:bg-gray-100 transition-all duration-300"
             >
-              <ChevronLeft className="h-6 w-6 text-gray-600" />
+              <ChevronLeft className="h-6 w-6 text-brand-brown" />
             </button>
             <button
               onClick={() => setCurrentTestimonial((prev) => (prev + 1) % testimonials.length)}
               className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg hover:bg-gray-100 transition-all duration-300"
             >
-              <ChevronRight className="h-6 w-6 text-gray-600" />
+              <ChevronRight className="h-6 w-6 text-brand-brown" />
             </button>
           </div>
         </div>
