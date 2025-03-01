@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Booking from './pages/Booking';
 import Tender from './pages/Tender';
 import Contact from './pages/Contact';
+import Fleet from './pages/Fleet';
+import Blog from './pages/Blog';
 import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -21,6 +23,8 @@ function App() {
             <Route path="/booking" element={<Booking />} />
             <Route path="/tender" element={<Tender />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/fleet" element={<Fleet />} />
+            <Route path="/blog" element={<Blog />} />
           </Routes>
         </main>
         <Footer />

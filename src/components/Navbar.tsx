@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <img src="/logo.png" className="h-16" />
+              <img src="/logo.png" className="h-16" alt="Coastal Elegance Logo" />
             </Link>
           </div>
 
@@ -32,8 +32,14 @@ const Navbar = () => {
             <Link to="/" className={`${isScrolled ? 'text-brand-brown' : 'text-brand-brown'} hover:text-brand-red transition`}>
               Home
             </Link>
+            <Link to="/fleet" className={`${isScrolled ? 'text-brand-brown' : 'text-brand-brown'} hover:text-brand-red transition`}>
+              Our Fleet
+            </Link>
             <Link to="/booking" className={`${isScrolled ? 'text-brand-brown' : 'text-brand-brown'} hover:text-brand-red transition`}>
               Book Now
+            </Link>
+            <Link to="/blog" className={`${isScrolled ? 'text-brand-brown' : 'text-brand-brown'} hover:text-brand-red transition`}>
+              Blog
             </Link>
             <Link to="/tender" className={`${isScrolled ? 'text-brand-brown' : 'text-brand-brown'} hover:text-brand-red transition`}>
               For Hotels
@@ -48,6 +54,8 @@ const Navbar = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={`${isScrolled ? 'text-brand-brown' : 'text-brand-brown'} hover:text-brand-red focus:outline-none`}
+              aria-expanded={isOpen}
+              aria-label="Toggle navigation menu"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -66,11 +74,25 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
+                to="/fleet"
+                className="block px-3 py-2 text-brand-brown hover:text-brand-red transition"
+                onClick={() => setIsOpen(false)}
+              >
+                Our Fleet
+              </Link>
+              <Link
                 to="/booking"
                 className="block px-3 py-2 text-brand-brown hover:text-brand-red transition"
                 onClick={() => setIsOpen(false)}
               >
                 Book Now
+              </Link>
+              <Link
+                to="/blog"
+                className="block px-3 py-2 text-brand-brown hover:text-brand-red transition"
+                onClick={() => setIsOpen(false)}
+              >
+                Blog
               </Link>
               <Link
                 to="/tender"
