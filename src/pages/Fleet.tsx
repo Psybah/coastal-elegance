@@ -311,7 +311,7 @@ const Fleet: React.FC = () => {
       </div>
 
       {/* CTA Section */}
-      <section className="bg-brand-brown py-16 mt-12">
+      <section className="container bg-brand-brown py-16 mt-12 mx-auto text-center rounded-2xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white/10 backdrop-blur-md rounded-lg p-8 md:p-12">
             <div className="md:flex md:items-center md:justify-between">
