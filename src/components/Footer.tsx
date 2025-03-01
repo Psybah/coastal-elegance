@@ -63,13 +63,7 @@ const Footer = () => {
                 <Instagram className="h-6 w-6" aria-hidden="true" />
               </a>
             </div>
-            <div className="bg-green-800/30 p-3 rounded-lg">
-              <p className="text-sm flex items-center">
-                <Leaf className="h-4 w-4 mr-2 text-green-400" aria-hidden="true" />
-                <span>Certified Carbon Neutral</span>
-              </p>
             </div>
-          </div>
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
