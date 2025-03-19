@@ -22,24 +22,6 @@ export interface BlogPost {
   readTime: number;
 }
 
-// Vehicle type for fleet
-export interface Vehicle {
-  id: number;
-  name: string;
-  category: string;
-  image: string;
-  description: string;
-  passengers: number;
-  range: string;
-  emissions: string;
-  efficiency: string;
-  features: string[];
-  co2Saved: string;
-  energySource: string;
-  pricePerDay: number;
-  pricePerWeek: number;
-  available: boolean;
-}
 
 // Environmental stat type
 export interface EnvironmentalStat {

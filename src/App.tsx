@@ -6,10 +6,12 @@ import Home from './pages/Home';
 import Booking from './pages/Booking';
 import Tender from './pages/Tender';
 import Contact from './pages/Contact';
-import Fleet from './pages/Fleet';
+import Tours from './pages/Tours';
 import Blog from './pages/Blog';
+import TourDetail from './pages/TourDetail';
 import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTop from './components/ScrollToTop';
+import TourCategory from './pages/TourCategory';
 
 function App() {
   return (
@@ -23,7 +25,9 @@ function App() {
             <Route path="/booking" element={<Booking />} />
             <Route path="/tender" element={<Tender />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/fleet" element={<Fleet />} />
+            <Route path="/tours" element={<Tours />} />
+            <Route path="/tours/category/:categorySlug" element={<TourCategory />} />
+            <Route path="/tours/:tourSlug" element={<TourDetail />} />
             <Route path="/blog" element={<Blog />} />
           </Routes>
         </main>
