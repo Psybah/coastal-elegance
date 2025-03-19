@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { 
   Calendar, Clock, MapPin, Users, Briefcase, 
-  CreditCard, Shield, Car, Truck, Bus, 
-  Plus, Minus, Info, CheckCircle, AlertTriangle
+  CreditCard, Shield, Car, Plus, Minus, Info, CheckCircle, AlertTriangle
 } from 'lucide-react';
 import { GoogleMap, DirectionsRenderer, useJsApiLoader } from '@react-google-maps/api';
 import Autocomplete from 'react-google-autocomplete';
