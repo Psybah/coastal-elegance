@@ -1,17 +1,26 @@
 import React from 'react';
-import { MessageCircle } from 'lucide-react';
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 const WhatsAppButton = () => {
   return (
-    <a
-      href="https://wa.me/27684328975"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110 z-50 flex items-center justify-center"
-      aria-label="Chat on WhatsApp"
-    >
-      <MessageCircle className="h-6 w-6" />
-    </a>
+    <FloatingWhatsApp
+      phoneNumber="27872656105"
+      accountName="Coastal Elegance"
+      statusMessage="Typically replies within 30 minutes"
+      chatMessage="Hello! 👋 How can we assist you with your travel plans today?"
+      placeholder="Type your message..."
+      avatar="/whatsapp.png"
+      allowClickAway={true}
+      notification={true}
+      notificationDelay={30}
+      notificationSound={true}
+      darkMode={false}
+      className="whatsapp-button"
+      style={{
+        // Adjust position to match your layout
+        zIndex: 999
+      }}
+    />
   );
 };
 

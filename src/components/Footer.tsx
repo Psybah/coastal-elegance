@@ -12,15 +12,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5" aria-hidden="true" />
-                <span>+1 (555) 123-4567</span>
+                <span>+27 87 265 6105</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5" aria-hidden="true" />
-                <span>info@coastalelegance.com</span>
+                <span>mail@coastalelegance.co.za</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5" aria-hidden="true" />
-                <span>123 Coastal Drive, Marina Bay</span>
+                <span>29 Petrusa Street, The Oak 203, Bellville, Cape Town</span>
               </div>
             </div>
           </div>

@@ -7,7 +7,7 @@ const faqs = [
     questions: [
       {
         question: "What areas do you service in South Africa?",
-        answer: "We provide luxury transportation services throughout South Africa's major regions including the Western Cape (Cape Town, Stellenbosch, Franschhoek), Gauteng (Johannesburg, Pretoria), KwaZulu-Natal (Durban), and the Garden Route. We also offer custom routes for special requests."
+        answer: "We provide luxury transportation services in Cape Town, including popular destinations such as Stellenbosch and Franschhoek. Custom routes are also available for special requests"
       },
       {
         question: "How far in advance should I book?",
