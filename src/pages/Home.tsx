@@ -75,7 +75,7 @@ const Home = () => {
             <span className="text-xs md:text-base">Book Now</span>
             <ArrowRight className="ml-2 h-5 w-5" /> 
           </Link>
-          <Link to="/tender" className="inline-flex items-center px-6 py-3 bg-white/20 backdrop-blur-md hover:bg-white/30 text-white rounded-lg transition-all duration-300 transform hover:scale-105" > 
+          <Link to="/tender" className="inline-flex items-center px-6 py-3 bg-brand-brown/20 backdrop-blur-sm hover:bg-brand-brown/50 text-white rounded-lg transition-all duration-300 transform hover:scale-105" > 
             <span className="text-xs md:text-base">Tender Services</span>
             <ArrowRight className="ml-2 h-5 w-5" /> 
           </Link>
