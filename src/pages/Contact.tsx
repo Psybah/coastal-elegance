@@ -46,7 +46,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1 text-brand-brown">Phone</h3>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                    <p className="text-gray-600">+27 87 265 6105</p>
                     <p className="text-gray-600">Available 24/7</p>
                   </div>
                 </div>
@@ -59,8 +59,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1 text-brand-brown">Email</h3>
-                    <p className="text-gray-600">info@coastalelegance.com</p>
-                    <p className="text-gray-600">support@coastalelegance.com</p>
+                    <p className="text-gray-600">mail@coastalelegance.com
+                    </p>
                   </div>
                 </div>
 
@@ -72,8 +72,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1 text-brand-brown">Address</h3>
-                    <p className="text-gray-600">123 Coastal Drive</p>
-                    <p className="text-gray-600">Marina Bay, CA 94111</p>
+                    <p className="text-gray-600">29 Petrusa Street</p>
+                    <p className="text-gray-600">The Oak 203, Bellville, Cape Town</p>
                   </div>
                 </div>
               </div>
