@@ -39,7 +39,7 @@ export const tourCategories: TourCategory[] = [
     id: "cape-town-day-tours",
     name: "Cape Town Day Tours",
     description: "Explore the beauty of Cape Town with our carefully curated day tours",
-    image: "/images/tours/cape-town-day.jpg",
+    image: "./tours/cape-town-day.jpg",
     slug: "cape-town-day-tours",
     tours: [
       {
@@ -48,12 +48,12 @@ export const tourCategories: TourCategory[] = [
         slug: "cape-peninsula-tour",
         description: "Experience the scenic beauty of the Cape Peninsula, from the stunning Chapman's Peak Drive to the Cape of Good Hope.",
         longDescription: "Join us on a journey through the Cape Peninsula, where you'll discover breathtaking coastal views, encounter African penguins, and explore the Cape Point Nature Reserve. This tour combines natural wonders with historical sites.",
-        image: "/images/tours/cape-peninsula.jpg",
+        image: "/tours/cape-peninsula/boulders-beach.jpg",
         gallery: [
-          "/images/tours/cape-peninsula/chapmans-peak.jpg",
-          "/images/tours/cape-peninsula/cape-point.jpg",
-          "/images/tours/cape-peninsula/boulders-beach.jpg",
-          "/images/tours/cape-peninsula/hout-bay.jpg"
+          "/tours/cape-peninsula/cape-point.jpg",
+          "/tours/cape-peninsula/chapmans-peak.jpg",
+          "/tours/cape-peninsula/hout-bay.jpg",
+          "/tours/cape-peninsula/kirstenbosch.jpg"
         ],
         duration: "Full Day (8-9 hours)",
         groupSize: "1-7 people",
@@ -77,19 +77,19 @@ export const tourCategories: TourCategory[] = [
             time: "09:00",
             description: "Visit Hout Bay Harbor with optional seal island boat trip",
             location: "Hout Bay",
-            image: "/images/tours/cape-peninsula/hout-bay.jpg"
+            image: "./tours/cape-peninsula/hout-bay.jpg"
           },
           {
             time: "10:00",
             description: "Drive along Chapman's Peak (weather permitting)",
             location: "Chapman's Peak",
-            image: "/images/tours/cape-peninsula/chapmans-peak.jpg"
+            image: "./tours/cape-peninsula/chapmans-peak.jpg"
           },
           {
             time: "11:30",
             description: "Cape Point Nature Reserve & Cape of Good Hope",
             location: "Cape Point",
-            image: "/images/tours/cape-peninsula/cape-point.jpg"
+            image: "./tours/cape-peninsula/cape-point.jpg"
           },
           {
             time: "13:30",
@@ -100,13 +100,13 @@ export const tourCategories: TourCategory[] = [
             time: "14:30",
             description: "Visit Boulders Beach Penguin Colony",
             location: "Boulders Beach",
-            image: "/images/tours/cape-peninsula/boulders-beach.jpg"
+            image: "./tours/cape-peninsula/boulders-beach.jpg"
           },
           {
             time: "16:00",
             description: "Kirstenbosch Botanical Gardens",
             location: "Kirstenbosch",
-            image: "/images/tours/cape-peninsula/kirstenbosch.jpg"
+            image: "./tours/cape-peninsula/kirstenbosch.jpg"
           },
           {
             time: "17:00",
@@ -136,7 +136,8 @@ export const tourCategories: TourCategory[] = [
           "Bring sunscreen and camera",
           "Child rates available for 2-11 years"
         ],
-        available: true
+        available: true,
+        category: "cape-town-day-tours"
       },
       {
         id: "table-mountain-city",
@@ -144,12 +145,12 @@ export const tourCategories: TourCategory[] = [
         slug: "table-mountain-city-tour",
         description: "Discover Cape Town's iconic Table Mountain and explore the historic city center.",
         longDescription: "Experience the best of Cape Town in one day. Start with a cable car ride up Table Mountain (weather permitting), followed by a comprehensive city tour including the Castle of Good Hope, Company Gardens, and Bo-Kaap.",
-        image: "/images/tours/table-mountain.jpg",
+        image: "./tours/table-mountain.jpg",
         gallery: [
-          "/images/tours/table-mountain/aerial.jpg",
-          "/images/tours/table-mountain/cable-car.jpg",
-          "/images/tours/table-mountain/bo-kaap.jpg",
-          "/images/tours/table-mountain/company-gardens.jpg"
+          "./tours/table-mountain/aerial.jpg",
+          "./tours/table-mountain/cable-car.jpg",
+          "./tours/table-mountain/bo-kaap.jpg",
+          "./tours/table-mountain/company-gardens.jpg"
         ],
         duration: "Half Day (4-5 hours)",
         groupSize: "1-7 people",
@@ -173,37 +174,37 @@ export const tourCategories: TourCategory[] = [
             time: "09:00",
             description: "Table Mountain Cable Car ride",
             location: "Table Mountain",
-            image: "/images/tours/table-mountain/cable-car.jpg"
+            image: "./tours/table-mountain/cable-car.jpg"
           },
           {
             time: "10:00",
             description: "Castle of Good Hope entrance",
             location: "Castle of Good Hope",
-            image: "/images/tours/table-mountain/castle.jpg"
+            image: "./tours/table-mountain/castle.jpg"
           },
           {
             time: "10:30",
             description: "Company Gardens",
             location: "Company Gardens",
-            image: "/images/tours/table-mountain/company-gardens.jpg"
+            image: "./tours/table-mountain/company-gardens.jpg"
           },
           {
             time: "11:00",
             description: "Bo-Kaap cultural district",
             location: "Bo-Kaap",
-            image: "/images/tours/table-mountain/bo-kaap.jpg"
+            image: "./tours/table-mountain/bo-kaap.jpg"
           },
           {
             time: "11:30",
             description: "Signal Hill viewpoint",
             location: "Signal Hill",
-            image: "/images/tours/table-mountain/signal-hill.jpg"
+            image: "./tours/table-mountain/signal-hill.jpg"
           },
           {
             time: "12:00",
             description: "V&A Waterfront (optional)",
             location: "V&A Waterfront",
-            image: "/images/tours/table-mountain/va-waterfront.jpg"
+            image: "./tours/table-mountain/va-waterfront.jpg"
           },
           {
             time: "13:00",
@@ -222,7 +223,8 @@ export const tourCategories: TourCategory[] = [
           "Additional meals and drinks",
           "Gratuities (optional)"
         ],
-        available: true
+        available: true,
+        category: "cape-town-day-tours"
       },
       {
         id: "robben-island",
@@ -230,11 +232,11 @@ export const tourCategories: TourCategory[] = [
         slug: "robben-island-tour",
         description: "Visit the historic Robben Island, where Nelson Mandela was imprisoned.",
         longDescription: "Take a ferry to Robben Island and explore the prison where Nelson Mandela spent 18 years. Learn about South Africa's journey to democracy from former political prisoners.",
-        image: "/images/tours/robben-island.jpg",
+        image: "./tours/robben-island.jpg",
         gallery: [
-          "/images/tours/robben-island/prison.jpg",
-          "/images/tours/robben-island/ferry.jpg",
-          "/images/tours/robben-island/museum.jpg"
+          "./tours/robben-island/prison.jpg",
+          "./tours/robben-island/ferry.jpg",
+          "./tours/robben-island/museum.jpg"
         ],
         duration: "Half Day (4-5 hours)",
         groupSize: "1-7 people",
@@ -252,31 +254,31 @@ export const tourCategories: TourCategory[] = [
             time: "09:00",
             description: "Pick up from V&A Waterfront",
             location: "V&A Waterfront",
-            image: "/images/tours/robben-island/ferry.jpg"
+            image: "./tours/robben-island/ferry.jpg"
           },
           {
             time: "09:30",
             description: "Ferry to Robben Island",
             location: "Robben Island",
-            image: "/images/tours/robben-island/ferry.jpg"
+            image: "./tours/robben-island/ferry.jpg"
           },
           {
             time: "10:00",
             description: "Tour with former political prisoner",
             location: "Robben Island",
-            image: "/images/tours/robben-island/prison.jpg"
+            image: "./tours/robben-island/prison.jpg"
           },
           {
             time: "11:00",
             description: "Visit Nelson Mandela's cell",
             location: "Robben Island",
-            image: "/images/tours/robben-island/prison.jpg"
+            image: "./tours/robben-island/prison.jpg"
           },
           {
             time: "12:00",
             description: "Island Museum tour",
             location: "Robben Island",
-            image: "/images/tours/robben-island/museum.jpg"
+            image: "./tours/robben-island/museum.jpg"
           },
           {
             time: "13:00",
@@ -298,7 +300,8 @@ export const tourCategories: TourCategory[] = [
           "Comfortable walking shoes recommended",
           "Bring sunscreen and camera"
         ],
-        available: true
+        available: true,
+        category: "cape-town-day-tours"
       },
       {
         id: "whale-watching",
@@ -306,10 +309,10 @@ export const tourCategories: TourCategory[] = [
         slug: "whale-watching-tour",
         description: "Experience the majestic Southern Right Whales in Hermanus (June-December).",
         longDescription: "Join us on a whale watching tour in Hermanus, where you'll have the opportunity to see these magnificent creatures in their natural habitat.",
-        image: "/images/tours/whale-watching.jpg",
+        image: "./tours/whale-watching.jpg",
         gallery: [
-          "/images/tours/whale-watching/whales.jpg",
-          "/images/tours/whale-watching/boat.jpg"
+          "./tours/whale-watching/whales.jpg",
+          "./tours/whale-watching/boat.jpg"
         ],
         duration: "Full Day (8-9 hours)",
         groupSize: "1-7 people",
@@ -331,25 +334,25 @@ export const tourCategories: TourCategory[] = [
             time: "08:00",
             description: "Drive to Hermanus",
             location: "Cape Town to Hermanus",
-            image: "/images/tours/whale-watching/drive.jpg"
+            image: "./tours/whale-watching/drive.jpg"
           },
           {
             time: "09:00",
             description: "Whale watching",
             location: "Hermanus",
-            image: "/images/tours/whale-watching/whales.jpg"
+            image: "./tours/whale-watching/whales.jpg"
           },
           {
             time: "10:00",
             description: "Hermanus village exploration",
             location: "Hermanus",
-            image: "/images/tours/whale-watching/village.jpg"
+            image: "./tours/whale-watching/village.jpg"
           },
           {
             time: "11:00",
             description: "Scenic coastal drive",
             location: "Hermanus to Cape Town",
-            image: "/images/tours/whale-watching/drive.jpg"
+            image: "./tours/whale-watching/drive.jpg"
           },
           {
             time: "12:00",
@@ -374,7 +377,8 @@ export const tourCategories: TourCategory[] = [
           "Bring sunscreen and camera",
           "Child rates available for 2-11 years"
         ],
-        available: true
+        available: true,
+        category: "cape-town-day-tours"
       },
       {
         id: "city-culture",
@@ -382,11 +386,11 @@ export const tourCategories: TourCategory[] = [
         slug: "city-cultural-tour",
         description: "Discover Cape Town's rich history and vibrant culture",
         longDescription: "Immerse yourself in Cape Town's diverse cultural heritage. Visit historic sites, colorful neighborhoods, and experience local traditions.",
-        image: "/images/tours/city-culture.jpg",
+        image: "./tours/city-culture.jpg",
         gallery: [
-          "/images/tours/city-culture/bo-kaap.jpg",
-          "/images/tours/city-culture/district-six.jpg",
-          "/images/tours/city-culture/castle.jpg"
+          "./tours/city-culture/bo-kaap.jpg",
+          "./tours/city-culture/district-six.jpg",
+          "./tours/city-culture/castle.jpg"
         ],
         duration: "Full Day (8 hours)",
         groupSize: "2-10 people",
@@ -410,37 +414,37 @@ export const tourCategories: TourCategory[] = [
             time: "10:00",
             description: "Visit Bo-Kaap",
             location: "Bo-Kaap",
-            image: "/images/tours/city-culture/bo-kaap.jpg"
+            image: "./tours/city-culture/bo-kaap.jpg"
           },
           {
             time: "11:00",
             description: "Visit District Six Museum",
             location: "District Six",
-            image: "/images/tours/city-culture/district-six.jpg"
+            image: "./tours/city-culture/district-six.jpg"
           },
           {
             time: "12:00",
             description: "Visit Castle of Good Hope",
             location: "Castle of Good Hope",
-            image: "/images/tours/city-culture/castle.jpg"
+            image: "./tours/city-culture/castle.jpg"
           },
           {
             time: "13:00",
             description: "Traditional African Dance Show",
             location: "Cape Town",
-            image: "/images/tours/city-culture/dance.jpg"
+            image: "./tours/city-culture/dance.jpg"
           },
           {
             time: "14:00",
             description: "Local Market Visit",
             location: "Cape Town",
-            image: "/images/tours/city-culture/market.jpg"
+            image: "./tours/city-culture/market.jpg"
           },
           {
             time: "15:00",
             description: "Township Art Gallery",
             location: "Cape Town",
-            image: "/images/tours/city-culture/gallery.jpg"
+            image: "./tours/city-culture/gallery.jpg"
           },
           {
             time: "16:00",
@@ -465,7 +469,8 @@ export const tourCategories: TourCategory[] = [
           "Bring sunscreen and camera",
           "Child rates available for 2-11 years"
         ],
-        available: true
+        available: true,
+        category: "cape-town-day-tours"
       },
       {
         id: "township-cultural",
@@ -473,11 +478,11 @@ export const tourCategories: TourCategory[] = [
         slug: "township-cultural-tour",
         description: "Experience the vibrant culture and history of Cape Town's townships",
         longDescription: "Gain insight into South Africa's history and experience the vibrant culture of Cape Town's townships. Meet local entrepreneurs, visit community projects, and enjoy traditional African cuisine.",
-        image: "/images/tours/township.jpg",
+        image: "./tours/township.jpg",
         gallery: [
-          "/images/tours/township/community.jpg",
-          "/images/tours/township/art.jpg",
-          "/images/tours/township/food.jpg"
+          "./tours/township/community.jpg",
+          "./tours/township/art.jpg",
+          "./tours/township/food.jpg"
         ],
         duration: "Half Day (4-5 hours)",
         groupSize: "2-10 people",
@@ -501,31 +506,31 @@ export const tourCategories: TourCategory[] = [
             time: "09:30",
             description: "District Six Museum visit - Learn about forced removals during apartheid",
             location: "District Six",
-            image: "/images/tours/township/district-six.jpg"
+            image: "./tours/township/district-six.jpg"
           },
           {
             time: "10:30",
             description: "Langa Township - Visit local craft markets and meet artisans",
             location: "Langa",
-            image: "/images/tours/township/crafts.jpg"
+            image: "./tours/township/crafts.jpg"
           },
           {
             time: "11:30",
             description: "Community development projects tour",
             location: "Langa",
-            image: "/images/tours/township/community.jpg"
+            image: "./tours/township/community.jpg"
           },
           {
             time: "12:30",
             description: "Traditional African lunch at a local restaurant",
             location: "Langa",
-            image: "/images/tours/township/food.jpg"
+            image: "./tours/township/food.jpg"
           },
           {
             time: "13:30",
             description: "Visit Guga S'thebe Arts & Culture Centre",
             location: "Langa",
-            image: "/images/tours/township/arts.jpg"
+            image: "./tours/township/arts.jpg"
           },
           {
             time: "14:30",
@@ -545,7 +550,104 @@ export const tourCategories: TourCategory[] = [
           "Additional beverages",
           "Gratuities (optional)",
           "Craft market purchases"
-        ]
+        ],
+        available: true,
+        category: "cape-town-day-tours"
+      },
+      {
+        id: "premium-wine-experience",
+        name: "Premium Wine Experience",
+        slug: "premium-wine-experience",
+        description: "Visit prestigious wine estates in Stellenbosch and Franschhoek",
+        longDescription: "Indulge in premium wine tastings at award-winning estates, paired with gourmet cuisine and stunning vineyard views.",
+        image: "./tours/wine/main.jpg",
+        gallery: [
+          "./tours/wine/gallery1.jpg",
+          "./tours/wine/gallery2.jpg",
+          "./tours/wine/gallery3.jpg",
+          "./tours/wine/gallery4.jpg"
+        ],
+        duration: "Full Day (8-9 hours)",
+        groupSize: "2-8 people",
+        startTime: "09:00",
+        meetingPoint: "Your accommodation in Cape Town",
+        highlights: [
+          "4 Premium Wine Estates",
+          "Cellar Tour",
+          "Wine and Chocolate Pairing",
+          "Gourmet Lunch",
+          "Wine Making Experience",
+          "Estate Gardens Tour"
+        ],
+        itinerary: [
+          {
+            time: "09:00",
+            description: "Pick up from your accommodation",
+            location: "Cape Town",
+          },
+          {
+            time: "10:00",
+            description: "Visit a winery in Stellenbosch",
+            location: "Stellenbosch",
+            image: "./tours/wine/estate1.jpg"
+          },
+          {
+            time: "11:00",
+            description: "Wine tasting at a Stellenbosch estate",
+            location: "Stellenbosch",
+            image: "./tours/wine/tasting.jpg"
+          },
+          {
+            time: "12:00",
+            description: "Visit a winery in Franschhoek",
+            location: "Franschhoek",
+            image: "./tours/wine/estate2.jpg"
+          },
+          {
+            time: "13:00",
+            description: "Wine tasting at a Franschhoek estate",
+            location: "Franschhoek",
+            image: "./tours/wine/tasting.jpg"
+          },
+          {
+            time: "14:00",
+            description: "Visit a winery in Stellenbosch",
+            location: "Stellenbosch",
+            image: "./tours/wine/estate3.jpg"
+          },
+          {
+            time: "15:00",
+            description: "Wine tasting at a Stellenbosch estate",
+            location: "Stellenbosch",
+            image: "./tours/wine/tasting.jpg"
+          },
+          {
+            time: "16:00",
+            description: "Return to Cape Town",
+            location: "Cape Town"
+          }
+        ],
+        includes: [
+          "Professional guide",
+          "Air-conditioned vehicle",
+          "Entrance fees (wine estates)",
+          "Wine tastings",
+          "Cellar tours",
+          "Bottled water"
+        ],
+        excludes: [
+          "Additional meals and drinks",
+          "Gratuities (optional)",
+          "Travel insurance"
+        ],
+        notes: [
+          "Tour operates daily, weather permitting",
+          "Comfortable walking shoes recommended",
+          "Bring sunscreen and camera",
+          "Child rates available for 2-11 years"
+        ],
+        available: true,
+        category: "cape-town-day-tours"
       }
     ]
   },
@@ -553,7 +655,7 @@ export const tourCategories: TourCategory[] = [
     id: "cape-winelands",
     name: "Cape Winelands Tours",
     description: "Discover South Africa's finest wines in the historic Cape Winelands",
-    image: "/images/tours/wine-tours.jpg",
+    image: "./tours/wine-tours.jpg",
     slug: "cape-winelands-tours",
     tours: [
       {
@@ -562,12 +664,12 @@ export const tourCategories: TourCategory[] = [
         slug: "stellenbosch-franschhoek-wine-tour",
         description: "Experience the finest wines of Stellenbosch and Franschhoek valleys.",
         longDescription: "Journey through the historic wine regions of the Cape, visiting prestigious estates in both Stellenbosch and Franschhoek. Enjoy wine tastings, cellar tours, and spectacular vineyard views.",
-        image: "/images/tours/wine/stellenbosch.jpg",
+        image: "./tours/wine/stellenbosch.jpg",
         gallery: [
-          "/images/tours/wine/estates.jpg",
-          "/images/tours/wine/tasting.jpg",
-          "/images/tours/wine/vineyards.jpg",
-          "/images/tours/wine/cellar.jpg"
+          "./tours/wine/estates.jpg",
+          "./tours/wine/tasting.jpg",
+          "./tours/wine/vineyards.jpg",
+          "./tours/wine/cellar.jpg"
         ],
         duration: "Full Day (8-9 hours)",
         groupSize: "2-7 people",
@@ -591,37 +693,37 @@ export const tourCategories: TourCategory[] = [
             time: "10:00",
             description: "Visit Stellenbosch",
             location: "Stellenbosch",
-            image: "/images/tours/wine/stellenbosch.jpg"
+            image: "./tours/wine/stellenbosch.jpg"
           },
           {
             time: "11:00",
             description: "Wine tasting at a Stellenbosch estate",
             location: "Stellenbosch",
-            image: "/images/tours/wine/tasting.jpg"
+            image: "./tours/wine/tasting.jpg"
           },
           {
             time: "12:00",
             description: "Visit Franschhoek",
             location: "Franschhoek",
-            image: "/images/tours/wine/franschhoek.jpg"
+            image: "./tours/wine/franschhoek.jpg"
           },
           {
             time: "13:00",
             description: "Wine tasting at a Franschhoek estate",
             location: "Franschhoek",
-            image: "/images/tours/wine/tasting.jpg"
+            image: "./tours/wine/tasting.jpg"
           },
           {
             time: "14:00",
             description: "Visit a winery in Franschhoek",
             location: "Franschhoek",
-            image: "/images/tours/wine/vineyards.jpg"
+            image: "./tours/wine/vineyards.jpg"
           },
           {
             time: "15:00",
             description: "Visit a winery in Stellenbosch",
             location: "Stellenbosch",
-            image: "/images/tours/wine/vineyards.jpg"
+            image: "./tours/wine/vineyards.jpg"
           },
           {
             time: "16:00",
@@ -646,7 +748,8 @@ export const tourCategories: TourCategory[] = [
           "Comfortable walking shoes recommended",
           "Bring sunscreen and camera"
         ],
-        available: true
+        available: true,
+        category: "cape-winelands-tours"
       },
       {
         id: "constantia-wine",
@@ -654,11 +757,11 @@ export const tourCategories: TourCategory[] = [
         slug: "constantia-wine-tour",
         description: "Explore South Africa's oldest wine region in the heart of Cape Town",
         longDescription: "Visit the historic Constantia Wine Valley, home to some of South Africa's oldest and most prestigious wine estates. Experience world-class wines, stunning mountain views, and centuries of wine-making history.",
-        image: "/images/tours/wine/constantia.jpg",
+        image: "./tours/wine/constantia.jpg",
         gallery: [
-          "/images/tours/wine/constantia-estate.jpg",
-          "/images/tours/wine/constantia-vineyards.jpg",
-          "/images/tours/wine/constantia-tasting.jpg"
+          "./tours/wine/constantia-estate.jpg",
+          "./tours/wine/constantia-vineyards.jpg",
+          "./tours/wine/constantia-tasting.jpg"
         ],
         duration: "Half Day (5-6 hours)",
         groupSize: "2-7 people",
@@ -682,19 +785,19 @@ export const tourCategories: TourCategory[] = [
             time: "09:45",
             description: "Groot Constantia Wine Estate - South Africa's oldest wine producer",
             location: "Constantia",
-            image: "/images/tours/wine/groot-constantia.jpg"
+            image: "./tours/wine/groot-constantia.jpg"
           },
           {
             time: "10:00",
             description: "Visit a local wildlife sanctuary",
             location: "Table Mountain",
-            image: "/images/tours/hiking/wildlife.jpg"
+            image: "./tours/hiking/wildlife.jpg"
           },
           {
             time: "11:00",
             description: "Cable car descent (weather permitting)",
             location: "Table Mountain",
-            image: "/images/tours/hiking/cable-car.jpg"
+            image: "./tours/hiking/cable-car.jpg"
           },
           {
             time: "12:00",
@@ -715,7 +818,8 @@ export const tourCategories: TourCategory[] = [
           "Gratuities (optional)",
           "Wine purchases"
         ],
-        available: true
+        available: true,
+        category: "cape-winelands-tours"
       },
       {
         id: "paarl-wine",
@@ -723,10 +827,10 @@ export const tourCategories: TourCategory[] = [
         slug: "paarl-wine-tour",
         description: "Discover the unique wines of the Paarl Valley.",
         longDescription: "Journey through the historic wine region of Paarl and enjoy wine tastings at some of the region's finest wineries.",
-        image: "/images/tours/wine/paarl.jpg",
+        image: "./tours/wine/paarl.jpg",
         gallery: [
-          "/images/tours/wine/vineyards.jpg",
-          "/images/tours/wine/tasting.jpg"
+          "./tours/wine/vineyards.jpg",
+          "./tours/wine/tasting.jpg"
         ],
         duration: "Full Day (8-9 hours)",
         groupSize: "2-7 people",
@@ -748,37 +852,37 @@ export const tourCategories: TourCategory[] = [
             time: "10:00",
             description: "Visit a winery in Paarl",
             location: "Paarl",
-            image: "/images/tours/wine/vineyards.jpg"
+            image: "./tours/wine/vineyards.jpg"
           },
           {
             time: "11:00",
             description: "Wine tasting at a Paarl winery",
             location: "Paarl",
-            image: "/images/tours/wine/tasting.jpg"
+            image: "./tours/wine/tasting.jpg"
           },
           {
             time: "12:00",
             description: "Visit another winery in Paarl",
             location: "Paarl",
-            image: "/images/tours/wine/vineyards.jpg"
+            image: "./tours/wine/vineyards.jpg"
           },
           {
             time: "13:00",
             description: "Wine tasting at a Paarl winery",
             location: "Paarl",
-            image: "/images/tours/wine/tasting.jpg"
+            image: "./tours/wine/tasting.jpg"
           },
           {
             time: "14:00",
             description: "Visit a third winery in Paarl",
             location: "Paarl",
-            image: "/images/tours/wine/vineyards.jpg"
+            image: "./tours/wine/vineyards.jpg"
           },
           {
             time: "15:00",
             description: "Wine tasting at a Paarl winery",
             location: "Paarl",
-            image: "/images/tours/wine/tasting.jpg"
+            image: "./tours/wine/tasting.jpg"
           },
           {
             time: "16:00",
@@ -804,7 +908,8 @@ export const tourCategories: TourCategory[] = [
           "Bring sunscreen and camera",
           "Child rates available for 2-11 years"
         ],
-        available: true
+        available: true,
+        category: "cape-winelands-tours"
       }
     ]
   },
@@ -812,7 +917,7 @@ export const tourCategories: TourCategory[] = [
     id: "garden-route",
     name: "Garden Route Tours",
     description: "Experience the natural beauty of South Africa's Garden Route",
-    image: "/images/tours/garden-route.jpg",
+    image: "./tours/garden-route.jpg",
     slug: "garden-route-tours",
     tours: [
       {
@@ -821,12 +926,12 @@ export const tourCategories: TourCategory[] = [
         slug: "garden-route-3-day-tour",
         description: "Experience the highlights of South Africa's famous Garden Route.",
         longDescription: "A comprehensive 3-day journey along the Garden Route, featuring pristine beaches, indigenous forests, wildlife encounters, and adventure activities.",
-        image: "/images/tours/garden-route/overview.jpg",
+        image: "./tours/garden-route/overview.jpg",
         gallery: [
-          "/images/tours/garden-route/knysna.jpg",
-          "/images/tours/garden-route/tsitsikamma.jpg",
-          "/images/tours/garden-route/wilderness.jpg",
-          "/images/tours/garden-route/plettenberg.jpg"
+          "./tours/garden-route/knysna.jpg",
+          "./tours/garden-route/tsitsikamma.jpg",
+          "./tours/garden-route/wilderness.jpg",
+          "./tours/garden-route/plettenberg.jpg"
         ],
         duration: "3 Days",
         groupSize: "2-12 people",
@@ -850,43 +955,43 @@ export const tourCategories: TourCategory[] = [
             time: "08:00",
             description: "Visit Knysna Heads",
             location: "Knysna Heads",
-            image: "/images/tours/garden-route/knysna.jpg"
+            image: "./tours/garden-route/knysna.jpg"
           },
           {
             time: "09:00",
             description: "Visit Tsitsikamma National Park",
             location: "Tsitsikamma National Park",
-            image: "/images/tours/garden-route/tsitsikamma.jpg"
+            image: "./tours/garden-route/tsitsikamma.jpg"
           },
           {
             time: "10:00",
             description: "Visit Plettenberg Bay",
             location: "Plettenberg Bay",
-            image: "/images/tours/garden-route/plettenberg.jpg"
+            image: "./tours/garden-route/plettenberg.jpg"
           },
           {
             time: "11:00",
             description: "Visit Wilderness National Park",
             location: "Wilderness National Park",
-            image: "/images/tours/garden-route/wilderness.jpg"
+            image: "./tours/garden-route/wilderness.jpg"
           },
           {
             time: "12:00",
             description: "Visit a local wildlife sanctuary",
             location: "Garden Route",
-            image: "/images/tours/garden-route/wildlife.jpg"
+            image: "./tours/garden-route/wildlife.jpg"
           },
           {
             time: "13:00",
             description: "Visit a bungy jumping site (optional)",
             location: "Garden Route",
-            image: "/images/tours/garden-route/bungy.jpg"
+            image: "./tours/garden-route/bungy.jpg"
           },
           {
             time: "14:00",
             description: "Visit a boat trip site (optional)",
             location: "Garden Route",
-            image: "/images/tours/garden-route/boat.jpg"
+            image: "./tours/garden-route/boat.jpg"
           },
           {
             time: "15:00",
@@ -911,7 +1016,8 @@ export const tourCategories: TourCategory[] = [
           "Bring sunscreen and camera",
           "Child rates available for 2-11 years"
         ],
-        available: true
+        available: true,
+        category: "garden-route-tours"
       }
     ]
   },
@@ -919,7 +1025,7 @@ export const tourCategories: TourCategory[] = [
     id: "adventure-tours",
     name: "Adventure Tours",
     description: "Thrilling adventures in and around Cape Town",
-    image: "/images/tours/adventure.jpg",
+    image: "./tours/adventure.jpg",
     slug: "adventure-tours",
     tours: [
       {
@@ -928,11 +1034,11 @@ export const tourCategories: TourCategory[] = [
         slug: "shark-cage-diving",
         description: "Face-to-face encounter with Great White Sharks",
         longDescription: "Experience the thrill of meeting Great White Sharks up close in their natural habitat. Professional guides ensure a safe and educational adventure.",
-        image: "/images/tours/shark-diving.jpg",
+        image: "./tours/shark-diving.jpg",
         gallery: [
-          "/images/tours/shark/cage.jpg",
-          "/images/tours/shark/boat.jpg",
-          "/images/tours/shark/briefing.jpg"
+          "./tours/shark/cage.jpg",
+          "./tours/shark/boat.jpg",
+          "./tours/shark/briefing.jpg"
         ],
         duration: "Full Day (10-12 hours)",
         groupSize: "2-12 people",
@@ -956,25 +1062,25 @@ export const tourCategories: TourCategory[] = [
             time: "06:30",
             description: "Arrival at Gansbaai harbor, breakfast and briefing",
             location: "Gansbaai",
-            image: "/images/tours/shark/briefing.jpg"
+            image: "./tours/shark/briefing.jpg"
           },
           {
             time: "07:30",
             description: "Boat launch and journey to Shark Alley",
             location: "Gansbaai",
-            image: "/images/tours/shark/boat.jpg"
+            image: "./tours/shark/boat.jpg"
           },
           {
             time: "08:30",
             description: "First group cage diving session",
             location: "Shark Alley",
-            image: "/images/tours/shark/cage.jpg"
+            image: "./tours/shark/cage.jpg"
           },
           {
             time: "12:30",
             description: "Light lunch served onboard",
             location: "Gansbaai",
-            image: "/images/tours/shark/lunch.jpg"
+            image: "./tours/shark/lunch.jpg"
           },
           {
             time: "13:30",
@@ -985,7 +1091,7 @@ export const tourCategories: TourCategory[] = [
             time: "14:30",
             description: "View trip footage and receive certificates",
             location: "Gansbaai",
-            image: "/images/tours/shark/certificates.jpg"
+            image: "./tours/shark/certificates.jpg"
           },
           {
             time: "15:00",
@@ -1014,7 +1120,8 @@ export const tourCategories: TourCategory[] = [
           "Bring sunscreen and camera",
           "Child rates available for 2-11 years"
         ],
-        available: true
+        available: true,
+        category: "adventure-tours"
       },
       {
         id: "paragliding",
@@ -1022,10 +1129,10 @@ export const tourCategories: TourCategory[] = [
         slug: "paragliding-cape-town",
         description: "Soar over Cape Town with experienced paragliding pilots.",
         longDescription: "Experience the thrill of paragliding over Cape Town's breathtaking landscapes.",
-        image: "/images/tours/paragliding.jpg",
+        image: "./tours/paragliding.jpg",
         gallery: [
-          "/images/tours/paragliding/takeoff.jpg",
-          "/images/tours/paragliding/landing.jpg"
+          "./tours/paragliding/takeoff.jpg",
+          "./tours/paragliding/landing.jpg"
         ],
         duration: "Full Day (8-9 hours)",
         groupSize: "1-7 people",
@@ -1047,13 +1154,13 @@ export const tourCategories: TourCategory[] = [
             time: "08:00",
             description: "Drive to paragliding location",
             location: "Cape Town",
-            image: "/images/tours/paragliding/drive.jpg"
+            image: "./tours/paragliding/drive.jpg"
           },
           {
             time: "09:00",
             description: "Paragliding",
             location: "Cape Town",
-            image: "/images/tours/paragliding/takeoff.jpg"
+            image: "./tours/paragliding/takeoff.jpg"
           },
           {
             time: "10:00",
@@ -1077,7 +1184,8 @@ export const tourCategories: TourCategory[] = [
           "Bring sunscreen and camera",
           "Child rates available for 2-11 years"
         ],
-        available: true
+        available: true,
+        category: "adventure-tours"
       },
       {
         id: "hiking-adventure",
@@ -1085,11 +1193,11 @@ export const tourCategories: TourCategory[] = [
         slug: "table-mountain-hiking",
         description: "Guided hiking adventures on Table Mountain",
         longDescription: "Experience the thrill of hiking one of the New 7 Wonders of Nature. Choose from various routes suitable for different fitness levels.",
-        image: "/images/tours/hiking.jpg",
+        image: "./tours/hiking.jpg",
         gallery: [
-          "/images/tours/hiking/india-venster.jpg",
-          "/images/tours/hiking/platteklip.jpg",
-          "/images/tours/hiking/skeleton.jpg"
+          "./tours/hiking/india-venster.jpg",
+          "./tours/hiking/platteklip.jpg",
+          "./tours/hiking/skeleton.jpg"
         ],
         duration: "4-6 hours",
         groupSize: "2-8 people",
@@ -1113,25 +1221,25 @@ export const tourCategories: TourCategory[] = [
             time: "08:00",
             description: "Drive to Table Mountain",
             location: "Cape Town",
-            image: "/images/tours/hiking/drive.jpg"
+            image: "./tours/hiking/drive.jpg"
           },
           {
             time: "09:00",
             description: "Start of the hike",
             location: "Table Mountain",
-            image: "/images/tours/hiking/india-venster.jpg"
+            image: "./tours/hiking/india-venster.jpg"
           },
           {
             time: "10:00",
             description: "Visit a local wildlife sanctuary",
             location: "Table Mountain",
-            image: "/images/tours/hiking/wildlife.jpg"
+            image: "./tours/hiking/wildlife.jpg"
           },
           {
             time: "11:00",
             description: "Cable car descent (weather permitting)",
             location: "Table Mountain",
-            image: "/images/tours/hiking/cable-car.jpg"
+            image: "./tours/hiking/cable-car.jpg"
           },
           {
             time: "12:00",
@@ -1155,7 +1263,8 @@ export const tourCategories: TourCategory[] = [
           "Bring sunscreen and camera",
           "Child rates available for 2-11 years"
         ],
-        available: true
+        available: true,
+        category: "adventure-tours"
       }
     ]
   },
@@ -1163,113 +1272,20 @@ export const tourCategories: TourCategory[] = [
     id: "wine-tours",
     name: "Wine Tours",
     description: "Discover the Cape Winelands' finest estates",
-    image: "/images/tours/wine.jpg",
+    image: "./tours/wine.jpg",
     slug: "wine-tours",
     tours: [
-      {
-        id: "premium-wine-tour",
-        name: "Premium Wine Experience",
-        slug: "premium-wine-experience",
-        description: "Visit prestigious wine estates in Stellenbosch and Franschhoek",
-        longDescription: "Indulge in premium wine tastings at award-winning estates, paired with gourmet cuisine and stunning vineyard views.",
-        image: "/images/tours/wine-premium.jpg",
-        gallery: [
-          "/images/tours/wine/estate1.jpg",
-          "/images/tours/wine/cellar.jpg",
-          "/images/tours/wine/tasting.jpg"
-        ],
-        duration: "Full Day (8-9 hours)",
-        groupSize: "2-8 people",
-        startTime: "09:00",
-        meetingPoint: "Your accommodation in Cape Town",
-        highlights: [
-          "4 Premium Wine Estates",
-          "Cellar Tour",
-          "Wine and Chocolate Pairing",
-          "Gourmet Lunch",
-          "Wine Making Experience",
-          "Estate Gardens Tour"
-        ],
-        itinerary: [
-          {
-            time: "09:00",
-            description: "Pick up from your accommodation",
-            location: "Cape Town",
-          },
-          {
-            time: "10:00",
-            description: "Visit a winery in Stellenbosch",
-            location: "Stellenbosch",
-            image: "/images/tours/wine/estate1.jpg"
-          },
-          {
-            time: "11:00",
-            description: "Wine tasting at a Stellenbosch estate",
-            location: "Stellenbosch",
-            image: "/images/tours/wine/tasting.jpg"
-          },
-          {
-            time: "12:00",
-            description: "Visit a winery in Franschhoek",
-            location: "Franschhoek",
-            image: "/images/tours/wine/estate2.jpg"
-          },
-          {
-            time: "13:00",
-            description: "Wine tasting at a Franschhoek estate",
-            location: "Franschhoek",
-            image: "/images/tours/wine/tasting.jpg"
-          },
-          {
-            time: "14:00",
-            description: "Visit a winery in Stellenbosch",
-            location: "Stellenbosch",
-            image: "/images/tours/wine/estate3.jpg"
-          },
-          {
-            time: "15:00",
-            description: "Wine tasting at a Stellenbosch estate",
-            location: "Stellenbosch",
-            image: "/images/tours/wine/tasting.jpg"
-          },
-          {
-            time: "16:00",
-            description: "Return to Cape Town",
-            location: "Cape Town"
-          }
-        ],
-        includes: [
-          "Professional guide",
-          "Air-conditioned vehicle",
-          "Entrance fees (wine estates)",
-          "Wine tastings",
-          "Cellar tours",
-          "Bottled water"
-        ],
-        excludes: [
-          "Additional meals and drinks",
-          "Gratuities (optional)",
-          "Travel insurance"
-        ],
-        notes: [
-          "Tour operates daily, weather permitting",
-          "Comfortable walking shoes recommended",
-          "Bring sunscreen and camera",
-          "Child rates available for 2-11 years"
-        ],
-        available: true
-      },
       {
         id: "constantia-wine",
         name: "Constantia Wine Tour",
         slug: "constantia-wine-tour",
         description: "Explore South Africa's oldest wine region in the heart of Cape Town",
         longDescription: "Visit the historic Constantia Wine Valley, home to some of South Africa's oldest and most prestigious wine estates. Experience world-class wines, stunning mountain views, and centuries of wine-making history.",
-        image: "/images/tours/wine/constantia.jpg",
+        image: "./tours/wine/constantia.jpg",
         gallery: [
-          "/images/tours/wine/constantia-estate.jpg",
-          "/images/tours/wine/constantia-vineyards.jpg",
-          "/images/tours/wine/constantia-tasting.jpg"
+          "./tours/wine/constantia-estate.jpg",
+          "./tours/wine/constantia-vineyards.jpg",
+          "./tours/wine/constantia-tasting.jpg"
         ],
         duration: "Half Day (5-6 hours)",
         groupSize: "2-7 people",
@@ -1293,19 +1309,19 @@ export const tourCategories: TourCategory[] = [
             time: "09:45",
             description: "Groot Constantia Wine Estate - South Africa's oldest wine producer",
             location: "Constantia",
-            image: "/images/tours/wine/groot-constantia.jpg"
+            image: "./tours/wine/groot-constantia.jpg"
           },
           {
             time: "10:00",
             description: "Visit a local wildlife sanctuary",
             location: "Table Mountain",
-            image: "/images/tours/hiking/wildlife.jpg"
+            image: "./tours/hiking/wildlife.jpg"
           },
           {
             time: "11:00",
             description: "Cable car descent (weather permitting)",
             location: "Table Mountain",
-            image: "/images/tours/hiking/cable-car.jpg"
+            image: "./tours/hiking/cable-car.jpg"
           },
           {
             time: "12:00",
@@ -1326,7 +1342,8 @@ export const tourCategories: TourCategory[] = [
           "Gratuities (optional)",
           "Wine purchases"
         ],
-        available: true
+        available: true,
+        category: "wine-tours"
       }
     ]
   }

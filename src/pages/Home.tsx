@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, Car, Star, Users, Calendar, Shield, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowRight, Star, Users, ChevronLeft, ChevronRight, Mountain, Wine, Compass } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import PopularTours from '../components/PopularTours';
 import FAQSection from '../components/FAQSection';
@@ -7,13 +7,28 @@ import FAQSection from '../components/FAQSection';
 const Home = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
+  const [currentBgIndex, setCurrentBgIndex] = useState(0);
+
+  const heroImages = [
+    '/tours/hero-bg.jpg',
+    '/tours/paragliding.jpeg',
+    '/tours/hiking.jpg',
+    '/tours/shark/cage.jpg',
+    '/tours/wine-premium.jpg'
+  ];
 
   useEffect(() => {
     setIsVisible(true);
     const timer = setInterval(() => {
       setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
     }, 5000);
-    return () => clearInterval(timer);
+    const bgTimer = setInterval(() => {
+      setCurrentBgIndex((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => {
+      clearInterval(timer);
+      clearInterval(bgTimer);
+    };
   }, []);
 
   const testimonials = [
@@ -53,29 +68,28 @@ const Home = () => {
     <div className="">
       {/* Hero Section */}
       <section 
-        className={`relative h-[100vh] bg-cover bg-center flex items-center transition-opacity duration-1000 ${
+        className={`relative h-[100vh] bg-cover bg-center flex items-center transition-all duration-1000 ${
           isVisible ? 'opacity-100' : 'opacity-0'
         }`}
         style={{
-          backgroundImage: 'url("/hero-bg.png")',
-          backgroundBlendMode: 'overlay',
-          backgroundColor: 'rgba(0, 0, 0, 0.4)'
+          backgroundImage: `url("${heroImages[currentBgIndex]}")`,
+          transition: 'background-image 1s ease-in-out'
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-            Your Gateway to Coastal Elegance and Luxury Travel
+            Discover the Wonders of Coastal Tours
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl animate-fade-in-delay">
-            Experience the perfect blend of comfort, reliability, and sophistication with our premium shuttle services.
+            Embark on an unforgettable journey with our expertly guided tours, showcasing the beauty and culture of the coast.
           </p>
           <div className="flex gap-4 animate-fade-in-delay-2">
-          <Link to="/booking" className="inline-flex items-center px-6 py-3 bg-brand-red hover:bg-brand-red/90 text-white rounded-lg transition-all duration-300 transform hover:scale-105" > 
-            <span className="text-xs md:text-base">Book Now</span>
+          <Link to="/tours" className="inline-flex items-center px-6 py-3 bg-brand-red hover:bg-brand-red/90 text-white rounded-lg transition-all duration-300 transform hover:scale-105" > 
+            <span className="text-xs md:text-base">Explore Tours</span>
             <ArrowRight className="ml-2 h-5 w-5" /> 
           </Link>
-          <Link to="/tender" className="inline-flex items-center px-6 py-3 bg-brand-brown/20 backdrop-blur-sm hover:bg-brand-brown/50 text-white rounded-lg transition-all duration-300 transform hover:scale-105" > 
+          <Link to="/tender" className="inline-flex items-center px-6 py-3 bg-white/20 backdrop-blur-sm  text-white rounded-lg transition-all duration-300 transform hover:scale-105" > 
             <span className="text-xs md:text-base">Tender Services</span>
             <ArrowRight className="ml-2 h-5 w-5" /> 
           </Link>
@@ -89,24 +103,24 @@ const Home = () => {
           <h2 className="text-3xl font-bold text-center mb-12 text-brand-brown">Our Premium Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 border-t-4 border-brand-red">
-              <Car className="h-12 w-12 text-brand-red mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-brand-brown">Airport Transfers</h3>
-              <p className="text-gray-600">Luxurious and punctual airport pickup and drop-off services.</p>
+              <Compass className="h-12 w-12 text-brand-red mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-brand-brown">Private Tours</h3>
+              <p className="text-gray-600">Personalized tours tailored to your interests and schedule.</p>
             </div>
             <div className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 border-t-4 border-brand-gold">
               <Users className="h-12 w-12 text-brand-gold mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-brand-brown">Group Tours</h3>
-              <p className="text-gray-600">Customized group tours along scenic coastal routes.</p>
+              <h3 className="text-xl font-semibold mb-2 text-brand-brown">Group Adventures</h3>
+              <p className="text-gray-600">Exciting group tours with expert local guides.</p>
             </div>
             <div className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 border-t-4 border-brand-red">
-              <Calendar className="h-12 w-12 text-brand-red mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-brand-brown">Event Transport</h3>
-              <p className="text-gray-600">Reliable transportation for corporate events and weddings.</p>
+              <Wine className="h-12 w-12 text-brand-red mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-brand-brown">Wine Tours</h3>
+              <p className="text-gray-600">Discover the finest wineries in the Cape Winelands.</p>
             </div>
             <div className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 border-t-4 border-brand-gold">
-              <Shield className="h-12 w-12 text-brand-gold mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-brand-brown">VIP Services</h3>
-              <p className="text-gray-600">Premium transportation with dedicated concierge support.</p>
+              <Mountain className="h-12 w-12 text-brand-gold mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-brand-brown">Adventure Tours</h3>
+              <p className="text-gray-600">Thrilling experiences from hiking to shark diving.</p>
             </div>
           </div>
         </div>

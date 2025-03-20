@@ -1,5 +1,5 @@
 // Individual tour page with full details, gallery, booking form
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import {
 	Clock,
@@ -16,11 +16,23 @@ import Breadcrumb from '../components/Breadcrumb';
 const TourDetail: React.FC = () => {
 	const { tourSlug } = useParams<{ tourSlug: string }>();
 	const [showBookingForm, setShowBookingForm] = useState(false);
+	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
 	// Find the tour
 	const tour = tourCategories
 		.flatMap((category) => category.tours)
 		.find((t) => t.slug === tourSlug);
+
+	// Add this effect to handle image rotation
+	useEffect(() => {
+		if (tour) {
+			const timer = setInterval(() => {
+				setCurrentImageIndex((prev) => (prev + 1) % (tour.gallery.length + 1));
+			}, 5000); // Change image every 5 seconds
+
+			return () => clearInterval(timer);
+		}
+	}, [tour?.gallery?.length]);
 
 	if (!tour) {
 		return <div>Tour not found</div>;
@@ -29,12 +41,19 @@ const TourDetail: React.FC = () => {
 	return (
 		<div className='pt-16 pb-16 min-h-screen bg-gray-50'>
 			{/* Hero Section */}
-			<section className='relative h-[60vh] bg-gray-900'>
+			<section className='relative h-[60vh] bg-gray-900 overflow-hidden'>
+				{/* Background Image */}
 				<div
-					className='absolute inset-0 bg-cover bg-center'
-					style={{ backgroundImage: `url(${tour.image})` }}>
-					<div className='absolute inset-0 bg-black/50' />
+					className='absolute inset-0 transition-opacity duration-1000 ease-in-out'
+					style={{ 
+						backgroundImage: `url(${currentImageIndex === 0 ? tour.image : tour.gallery[currentImageIndex - 1]})`,
+						backgroundSize: 'cover',
+						backgroundPosition: 'center',
+					}}>
+					<div className='absolute inset-0 bg-gradient-to-r from-black/60 to-black/30' />
 				</div>
+
+				{/* Content */}
 				<div className='relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center'>
 					<div className='text-white'>
 						<h1 className='text-4xl md:text-5xl font-bold mb-4'>{tour.name}</h1>
@@ -42,6 +61,19 @@ const TourDetail: React.FC = () => {
 							{tour.description}
 						</p>
 					</div>
+				</div>
+
+				{/* Image Navigation Dots */}
+				<div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
+					{[tour.image, ...tour.gallery].map((_, idx) => (
+						<button
+							key={idx}
+							onClick={() => setCurrentImageIndex(idx)}
+							className={`w-2 h-2 rounded-full transition-all ${
+								currentImageIndex === idx ? 'bg-white w-4' : 'bg-white/50'
+							}`}
+						/>
+					))}
 				</div>
 			</section>
 
@@ -52,6 +84,27 @@ const TourDetail: React.FC = () => {
 
 			{/* Main Content */}
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+				{/* Gallery Section - Add this here instead */}
+				<div className="mb-8">
+					<h2 className='text-2xl font-semibold text-brand-brown mb-4'>
+						Tour Gallery
+					</h2>
+					<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+						{tour.gallery.map((image, index) => (
+							<div 
+								key={index}
+								className="relative h-48 rounded-lg overflow-hidden hover:opacity-90 transition-opacity cursor-pointer shadow-md"
+							>
+								<img 
+									src={image} 
+									alt={`${tour.name} view ${index + 1}`}
+									className="w-full h-full object-cover"
+								/>
+							</div>
+						))}
+					</div>
+				</div>
+				
 				<div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
 					{/* Tour Details */}
 					<div className='lg:col-span-2'>

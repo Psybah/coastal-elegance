@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Phone, Mail, MapPin, Leaf } from 'lucide-react';
+import { Facebook, Instagram, Phone, Mail, MapPin, Compass, Users, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -40,16 +40,16 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Our Commitment</h3>
             <div className="flex items-start space-x-3 mb-3">
-              <Leaf className="h-5 w-5 text-green-400 flex-shrink-0 mt-1" aria-hidden="true" />
-              <span>Carbon-neutral transportation services</span>
+              <Compass className="h-5 w-5 text-brand-gold flex-shrink-0 mt-1" aria-hidden="true" />
+              <span>Authentic local experiences</span>
             </div>
             <div className="flex items-start space-x-3 mb-3">
-              <Leaf className="h-5 w-5 text-green-400 flex-shrink-0 mt-1" aria-hidden="true" />
-              <span>Eco-friendly fleet with zero emissions</span>
+              <Shield className="h-5 w-5 text-brand-gold flex-shrink-0 mt-1" aria-hidden="true" />
+              <span>Professional certified guides</span>
             </div>
             <div className="flex items-start space-x-3">
-              <Leaf className="h-5 w-5 text-green-400 flex-shrink-0 mt-1" aria-hidden="true" />
-              <span>Supporting local environmental initiatives</span>
+              <Users className="h-5 w-5 text-brand-gold flex-shrink-0 mt-1" aria-hidden="true" />
+              <span>Small group experiences</span>
             </div>
           </div>
 

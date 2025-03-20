@@ -9,7 +9,6 @@ import Contact from './pages/Contact';
 import Tours from './pages/Tours';
 import Blog from './pages/Blog';
 import TourDetail from './pages/TourDetail';
-import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTop from './components/ScrollToTop';
 import TourCategory from './pages/TourCategory';
 
@@ -32,7 +31,6 @@ function App() {
           </Routes>
         </main>
         <Footer />
-        <WhatsAppButton />
       </div>
     </Router>
   );

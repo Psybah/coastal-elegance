@@ -20,8 +20,7 @@ const Booking: React.FC = () => {
             </h1>
             <p className="text-xl text-white/90 mb-8">
               Ready to explore Cape Town with ease and comfort? Fill out the form below to make your booking today, and let us take
-              care of the rest. Whether it's a private tour, airport shuttle, or group travel, we're here to ensure your journey is seamless and
-              enjoyable.
+              care of the rest.
             </p>
           </div>
         </div>
@@ -67,8 +66,8 @@ const Booking: React.FC = () => {
               />
             </div>
 
-            <div className="relative">
-              <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-brand-gold h-5 w-5" />
+                    <div className="relative">
+                      <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-brand-gold h-5 w-5" />
               <input
                 type="text"
                 name="startDestination"
@@ -76,20 +75,20 @@ const Booking: React.FC = () => {
                 className="w-full pl-10 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-red focus:border-transparent"
                 required
               />
-            </div>
-
-            <div className="relative">
-              <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-brand-gold h-5 w-5" />
+                  </div>
+                  
+                    <div className="relative">
+                      <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-brand-gold h-5 w-5" />
               <input
                 type="text"
                 name="endDestination"
                 placeholder="End Destination"
                 className="w-full pl-10 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-red focus:border-transparent"
                 required
-              />
-            </div>
+                      />
+                    </div>
 
-            <div className="relative">
+                      <div className="relative">
               <Users className="absolute left-3 top-1/2 transform -translate-y-1/2 text-brand-gold h-5 w-5" />
               <input
                 type="number"
@@ -97,10 +96,10 @@ const Booking: React.FC = () => {
                 placeholder="Number of Passengers"
                 className="w-full pl-10 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-red focus:border-transparent"
                 required
-              />
-            </div>
+                        />
+                      </div>
 
-            <div className="relative">
+                      <div className="relative">
               <Car className="absolute left-3 top-1/2 transform -translate-y-1/2 text-brand-gold h-5 w-5" />
               <input
                 type="text"
@@ -110,7 +109,7 @@ const Booking: React.FC = () => {
                 required
               />
             </div>
-
+            
             <div className="relative">
               <FileText className="absolute left-3 top-1/2 transform -translate-y-1/2 text-brand-gold h-5 w-5" />
               <input
@@ -130,7 +129,7 @@ const Booking: React.FC = () => {
                 required
               />
             </div>
-
+            
             <div className="relative">
               <Clock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-brand-gold h-5 w-5" />
               <input
@@ -150,14 +149,14 @@ const Booking: React.FC = () => {
               rows={4}
               className="w-full pl-10 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-red focus:border-transparent"
             ></textarea>
-          </div>
-
-          <button
+              </div>
+              
+                  <button
             type="submit"
             className="w-full bg-brand-red text-white py-4 rounded-lg text-lg font-semibold hover:bg-brand-red/90 transition-colors"
-          >
-            BOOK SHUTTLE NOW
-          </button>
+                  >
+            BOOK NOW
+                  </button>
         </form>
       </div>
     </div>
