@@ -5,87 +5,92 @@ import { tourCategories } from '../data/tourData';
 import Breadcrumb from '../components/Breadcrumb';
 
 const TourCategory: React.FC = () => {
-  const { categorySlug } = useParams<{ categorySlug: string }>();
-  const category = tourCategories.find(cat => cat.slug === categorySlug);
+	const { categorySlug } = useParams<{ categorySlug: string }>();
+	const category = tourCategories.find((cat) => cat.slug === categorySlug);
 
-  if (!category) {
-    return <div>Category not found</div>;
-  }
+	if (!category) {
+		return <div>Category not found</div>;
+	}
 
-  return (
-    <div className="pt-16 pb-16 min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-brand-brown to-brand-red py-16">
-        <div className="absolute inset-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: `url(${category.image})` }}></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">{category.name}</h1>
-            <p className="text-xl text-white/90 max-w-2xl">{category.description}</p>
-          </div>
-        </div>
-      </section>
+	return (
+		<div className='pt-16 pb-16 min-h-screen bg-gray-50'>
+			{/* Hero Section */}
+			<section className='relative bg-gradient-to-r from-brand-brown to-brand-red py-16'>
+				<div
+					className='absolute inset-0 opacity-20 bg-cover bg-center'
+					style={{ backgroundImage: `url(${category.image})` }}></div>
+				<div className='relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+					<div className='text-white'>
+						<h1 className='text-4xl md:text-5xl font-bold mb-4'>
+							{category.name}
+						</h1>
+						<p className='text-xl text-white/90 max-w-2xl'>
+							{category.description}
+						</p>
+					</div>
+				</div>
+			</section>
 
-      {/* Breadcrumb */}
-      <Breadcrumb items={[
-        { label: 'Tours', path: '/tours' },
-        { label: category.name }
-      ]} />
+			{/* Breadcrumb */}
+			<Breadcrumb
+				items={[{ label: 'Tours', path: '/tours' }, { label: category.name }]}
+			/>
 
-      {/* Tours Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {category.tours.map((tour) => (
-            <Link
-              key={tour.id}
-              to={`/tours/${tour.slug}`}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
-            >
-              <div
-                className="h-48 bg-cover bg-center"
-                style={{ backgroundImage: `url(${tour.image})` }}
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-brand-brown mb-2">
-                  {tour.name}
-                </h3>
-                <p className="text-gray-600 mb-4">{tour.description}</p>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-4">
-                    <div className="flex items-center">
-                      <Clock className="h-5 w-5 text-brand-gold mr-2" />
-                      <span className="text-sm">{tour.duration}</span>
-                    </div>
-                    <div className="flex items-center">
-                      <Users className="h-5 w-5 text-brand-gold mr-2" />
-                      <span className="text-sm">{tour.groupSize}</span>
-                    </div>
-                  </div>
-                  <ArrowRight className="h-5 w-5 text-brand-red" />
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </div>
+			{/* Tours Grid */}
+			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+					{category.tours.map((tour) => (
+						<Link
+							key={tour.id}
+							to={`/tours/${tour.slug}`}
+							className='bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow'>
+							<div
+								className='h-48 bg-cover bg-center'
+								style={{ backgroundImage: `url(${tour.image})` }}
+							/>
+							<div className='p-6'>
+								<h3 className='text-xl font-semibold text-brand-brown mb-2'>
+									{tour.name}
+								</h3>
+								<p className='text-gray-600 mb-4'>{tour.description}</p>
+								<div className='flex items-center justify-between'>
+									<div className='flex items-center space-x-4'>
+										<div className='flex items-center'>
+											<Clock className='h-5 w-5 text-brand-gold mr-2' />
+											<span className='text-sm'>{tour.duration}</span>
+										</div>
+										<div className='flex items-center'>
+											<Users className='h-5 w-5 text-brand-gold mr-2' />
+											<span className='text-sm'>{tour.groupSize}</span>
+										</div>
+									</div>
+									<ArrowRight className='h-5 w-5 text-brand-red' />
+								</div>
+							</div>
+						</Link>
+					))}
+				</div>
+			</div>
 
-      {/* WhatsApp CTA */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-brand-brown rounded-lg p-8 text-center">
-          <h2 className="text-2xl font-bold text-white mb-4">Ready to Book Your Tour?</h2>
-          <p className="text-white/90 mb-6">Contact us on WhatsApp for quick and easy booking!</p>
-          <a
-            href="https://wa.me/27872656105"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
-          >
-            Chat on WhatsApp
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </a>
-        </div>
-      </div>
-    </div>
-  );
+			{/* WhatsApp CTA */}
+			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+				<div className='bg-brand-brown rounded-lg p-8 text-center'>
+					<h2 className='text-2xl font-bold text-white mb-4'>
+						Ready to Book Your Tour?
+					</h2>
+					<p className='text-white/90 mb-6'>
+						Contact us on Email for quick and easy booking!
+					</p>
+					<Link
+						to='/booking'
+						className='inline-flex items-center px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors'>
+						Send an Email
+						<ArrowRight className='ml-2 h-5 w-5' />
+					</Link>
+				</div>
+			</div>
+		</div>
+	);
 };
 
-export default TourCategory; 
+export default TourCategory;
