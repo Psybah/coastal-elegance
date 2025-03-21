@@ -15,7 +15,6 @@ import Breadcrumb from '../components/Breadcrumb';
 
 const TourDetail: React.FC = () => {
 	const { tourSlug } = useParams<{ tourSlug: string }>();
-	const [showBookingForm, setShowBookingForm] = useState(false);
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
 	// Find the tour
@@ -28,8 +27,7 @@ const TourDetail: React.FC = () => {
 		if (tour) {
 			const timer = setInterval(() => {
 				setCurrentImageIndex((prev) => (prev + 1) % (tour.gallery.length + 1));
-			}, 5000); // Change image every 5 seconds
-
+			}, 5000);
 			return () => clearInterval(timer);
 		}
 	}, [tour?.gallery?.length]);
@@ -38,26 +36,29 @@ const TourDetail: React.FC = () => {
 		return <div>Tour not found</div>;
 	}
 
+	console.log('Current Image:', currentImageIndex === 0 ? tour.image : tour.gallery[currentImageIndex - 1]);
+	console.log('All Images:', [tour.image, ...tour.gallery]);
+
 	return (
-		<div className='pt-16 pb-16 min-h-screen bg-gray-50'>
+		<div className="pt-16 pb-16 min-h-screen bg-gray-50">
 			{/* Hero Section */}
-			<section className='relative h-[60vh] bg-gray-900 overflow-hidden'>
+			<section className="relative h-[60vh] overflow-hidden">
 				{/* Background Image */}
 				<div
-					className='absolute inset-0 transition-opacity duration-1000 ease-in-out'
+					className="absolute inset-0 bg-cover bg-center transition-transform duration-1000"
 					style={{ 
 						backgroundImage: `url(${currentImageIndex === 0 ? tour.image : tour.gallery[currentImageIndex - 1]})`,
-						backgroundSize: 'cover',
-						backgroundPosition: 'center',
+						transform: 'scale(1.1)',
+						opacity: 1
 					}}>
-					<div className='absolute inset-0 bg-gradient-to-r from-black/60 to-black/30' />
+					<div className="absolute inset-0 bg-black/40" />
 				</div>
 
 				{/* Content */}
-				<div className='relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center'>
-					<div className='text-white'>
-						<h1 className='text-4xl md:text-5xl font-bold mb-4'>{tour.name}</h1>
-						<p className='text-xl text-white/90 max-w-2xl'>
+				<div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+					<div className="text-white">
+						<h1 className="text-4xl md:text-5xl font-bold mb-4">{tour.name}</h1>
+						<p className="text-xl text-white/90 max-w-2xl">
 							{tour.description}
 						</p>
 					</div>
@@ -79,32 +80,14 @@ const TourDetail: React.FC = () => {
 
 			{/* Breadcrumb */}
 			<Breadcrumb
-				items={[{ label: 'Tours', path: '/tours' }, { label: tour.name }]}
+				items={[
+					{ label: 'Tours', path: '/tours' },
+					{ label: tour.name }
+				]}
 			/>
 
 			{/* Main Content */}
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
-				{/* Gallery Section - Add this here instead */}
-				<div className="mb-8">
-					<h2 className='text-2xl font-semibold text-brand-brown mb-4'>
-						Tour Gallery
-					</h2>
-					<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-						{tour.gallery.map((image, index) => (
-							<div 
-								key={index}
-								className="relative h-48 rounded-lg overflow-hidden hover:opacity-90 transition-opacity cursor-pointer shadow-md"
-							>
-								<img 
-									src={image} 
-									alt={`${tour.name} view ${index + 1}`}
-									className="w-full h-full object-cover"
-								/>
-							</div>
-						))}
-					</div>
-				</div>
-				
 				<div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
 					{/* Tour Details */}
 					<div className='lg:col-span-2'>

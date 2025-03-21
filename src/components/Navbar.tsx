@@ -38,9 +38,6 @@ const Navbar = () => {
             <Link to="/booking" className={`${isScrolled ? 'text-brand-brown' : 'text-brand-brown'} hover:text-brand-red transition`}>
               Book Now
             </Link>
-            <Link to="/blog" className={`${isScrolled ? 'text-brand-brown' : 'text-brand-brown'} hover:text-brand-red transition`}>
-              Blog
-            </Link>
             <Link to="/tender" className={`${isScrolled ? 'text-brand-brown' : 'text-brand-brown'} hover:text-brand-red transition`}>
               For Hotels
             </Link>
@@ -86,13 +83,6 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Book Now
-              </Link>
-              <Link
-                to="/blog"
-                className="block px-3 py-2 text-brand-brown hover:text-brand-red transition"
-                onClick={() => setIsOpen(false)}
-              >
-                Blog
               </Link>
               <Link
                 to="/tender"
