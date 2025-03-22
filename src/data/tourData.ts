@@ -652,7 +652,7 @@ export const tourCategories: TourCategory[] = [
     ]
   },
   {
-    id: "cape-winelands",
+    id: "cape-winelands-tours",
     name: "Cape Winelands Tours",
     description: "Discover South Africa's finest wines in the historic Cape Winelands",
     image: "/tours/wine-tours.jpg",
@@ -910,114 +910,6 @@ export const tourCategories: TourCategory[] = [
         ],
         available: true,
         category: "cape-winelands-tours"
-      }
-    ]
-  },
-  {
-    id: "garden-route",
-    name: "Garden Route Tours",
-    description: "Experience the natural beauty of South Africa's Garden Route",
-    image: "/tours/garden-route.jpg",
-    slug: "garden-route-tours",
-    tours: [
-      {
-        id: "garden-route-highlights",
-        name: "Garden Route 3-Day Tour",
-        slug: "garden-route-3-day-tour",
-        description: "Experience the highlights of South Africa's famous Garden Route.",
-        longDescription: "A comprehensive 3-day journey along the Garden Route, featuring pristine beaches, indigenous forests, wildlife encounters, and adventure activities.",
-        image: "/tours/garden-route/overview.jpg",
-        gallery: [
-          "/tours/garden-route/knysna.jpg",
-          "/tours/garden-route/overview.jpg",
-          "/tours/garden-route/wilderness.jpg",
-          "/tours/garden-route/wildlife.jpg"
-        ],
-        duration: "3 Days",
-        groupSize: "2-12 people",
-        startTime: "07:00",
-        meetingPoint: "Your accommodation in Cape Town",
-        highlights: [
-          "Knysna Heads & Lagoon",
-          "Tsitsikamma National Park",
-          "Plettenberg Bay beaches",
-          "Wilderness National Park",
-          "Optional activities (bungy jumping, boat trips)",
-          "Wildlife encounters"
-        ],
-        itinerary: [
-          {
-            time: "07:00",
-            description: "Pick up from your accommodation",
-            location: "Cape Town",
-          },
-          {
-            time: "08:00",
-            description: "Visit Knysna Heads",
-            location: "Knysna Heads",
-            image: "/tours/garden-route/knysna.jpg"
-          },
-          {
-            time: "09:00",
-            description: "Visit Tsitsikamma National Park",
-            location: "Tsitsikamma National Park",
-            image: "/tours/garden-route/tsitsikamma.jpg"
-          },
-          {
-            time: "10:00",
-            description: "Visit Plettenberg Bay",
-            location: "Plettenberg Bay",
-            image: "/tours/garden-route/plettenberg.jpg"
-          },
-          {
-            time: "11:00",
-            description: "Visit Wilderness National Park",
-            location: "Wilderness National Park",
-            image: "/tours/garden-route/wilderness.jpg"
-          },
-          {
-            time: "12:00",
-            description: "Visit a local wildlife sanctuary",
-            location: "Garden Route",
-            image: "/tours/garden-route/wildlife.jpg"
-          },
-          {
-            time: "13:00",
-            description: "Visit a bungy jumping site (optional)",
-            location: "Garden Route",
-            image: "/tours/garden-route/bungy.jpg"
-          },
-          {
-            time: "14:00",
-            description: "Visit a boat trip site (optional)",
-            location: "Garden Route",
-            image: "/tours/garden-route/boat.jpg"
-          },
-          {
-            time: "15:00",
-            description: "Return to Cape Town",
-            location: "Cape Town"
-          }
-        ],
-        includes: [
-          "Professional guide",
-          "Air-conditioned vehicle",
-          "Entrance fees (national parks)",
-          "Bottled water"
-        ],
-        excludes: [
-          "Additional meals and drinks",
-          "Gratuities (optional)",
-          "Travel insurance"
-        ],
-        notes: [
-          "Tour operates daily, weather permitting",
-          "Comfortable walking shoes recommended",
-          "Bring sunscreen and camera",
-          "Child rates available for 2-11 years"
-        ],
-        available: true,
-        category: "garden-route-tours"
       }
     ]
   },
