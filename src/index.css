@@ -121,3 +121,50 @@ details[open] summary {
 .StripeElement--webkit-autofill {
   background-color: #fefde5 !important;
 }
+
+/* Snap scrolling for smooth swiping behavior */
+.snap-x {
+  scroll-snap-type: x mandatory;
+}
+
+.snap-start {
+  scroll-snap-align: start;
+}
+
+.snap-mandatory {
+  scroll-snap-type: x mandatory;
+}
+
+/* Improve touch scrolling on mobile */
+@media (max-width: 768px) {
+  .hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Momentum-based scrolling for iOS */
+  .overflow-x-auto {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Fix some layout issues with grid/flexbox */
+@media (min-width: 768px) {
+  .md\:grid {
+    display: grid;
+  }
+  
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+/* Prevent content from being cut off */
+.overflow-x-auto {
+  padding-bottom: 12px;
+  margin-bottom: -12px;
+}

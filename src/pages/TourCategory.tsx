@@ -36,8 +36,8 @@ const TourCategory: React.FC = () => {
 				items={[{ label: 'Tours', path: '/tours' }, { label: category.name }]}
 			/>
 
-			{/* Tours Grid */}
-			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+			{/* Tours Grid - Fixed to properly stack on web view */}
+			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12'>
 				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
 					{category.tours.map((tour) => (
 						<Link
@@ -48,23 +48,23 @@ const TourCategory: React.FC = () => {
 								className='h-48 bg-cover bg-center'
 								style={{ backgroundImage: `url(${tour.image})` }}
 							/>
-							<div className='p-6'>
-								<h3 className='text-xl font-semibold text-brand-brown mb-2'>
+							<div className='p-4 md:p-6'>
+								<h3 className='text-lg md:text-xl font-semibold text-brand-brown mb-2'>
 									{tour.name}
 								</h3>
-								<p className='text-gray-600 mb-4'>{tour.description}</p>
+								<p className='text-sm md:text-base text-gray-600 mb-4'>{tour.description}</p>
 								<div className='flex items-center justify-between'>
-									<div className='flex items-center space-x-4'>
+									<div className='flex items-center space-x-3 md:space-x-4'>
 										<div className='flex items-center'>
-											<Clock className='h-5 w-5 text-brand-gold mr-2' />
-											<span className='text-sm'>{tour.duration}</span>
+											<Clock className='h-4 w-4 md:h-5 md:w-5 text-brand-gold mr-1 md:mr-2' />
+											<span className='text-xs md:text-sm'>{tour.duration}</span>
 										</div>
 										<div className='flex items-center'>
-											<Users className='h-5 w-5 text-brand-gold mr-2' />
-											<span className='text-sm'>{tour.groupSize}</span>
+											<Users className='h-4 w-4 md:h-5 md:w-5 text-brand-gold mr-1 md:mr-2' />
+											<span className='text-xs md:text-sm'>{tour.groupSize}</span>
 										</div>
 									</div>
-									<ArrowRight className='h-5 w-5 text-brand-red' />
+									<ArrowRight className='h-4 w-4 md:h-5 md:w-5 text-brand-red' />
 								</div>
 							</div>
 						</Link>
@@ -79,14 +79,16 @@ const TourCategory: React.FC = () => {
 						Ready to Book Your Tour?
 					</h2>
 					<p className='text-white/90 mb-6'>
-						Contact us on Email for quick and easy booking!
+						Contact us directly on WhatsApp for quick and easy booking!
 					</p>
-					<Link
-						to='/booking'
+					<a
+						href={`https://wa.me/27728127533?text=I'm%20interested%20in%20booking%20a%20tour%20in%20the%20${category.name}%20category`}
+						target="_blank"
+						rel="noopener noreferrer"
 						className='inline-flex items-center px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors'>
-						Send an Email
+						Book via WhatsApp
 						<ArrowRight className='ml-2 h-5 w-5' />
-					</Link>
+					</a>
 				</div>
 			</div>
 		</div>

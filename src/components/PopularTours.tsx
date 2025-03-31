@@ -44,7 +44,7 @@ const PopularTours = () => {
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative mt-8"> {/* Added margin-top to create space */}
           {/* Mobile scroll buttons */}
           <div className="md:hidden">
             <button

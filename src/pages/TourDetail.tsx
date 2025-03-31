@@ -189,14 +189,22 @@ const TourDetail: React.FC = () => {
 					<div className='lg:col-span-1'>
 						<div className='sticky top-24'>
 							<div className='bg-white rounded-lg shadow-lg p-6'>
-								<button
-									onClick={() =>
-										window.open('https://wa.me/27872656105', '_blank')
-									}
-									className='w-full bg-green-500 text-white py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors flex items-center justify-center'>
-									Book via Email
-									<ArrowRight className='ml-2 h-5 w-5' />
-								</button>
+								<div className="mt-8">
+									<h3 className="text-2xl font-bold text-brand-brown mb-4">Book This Tour</h3>
+									<div className="bg-white rounded-lg shadow-md p-6">
+										<p className="text-gray-700 mb-4">
+											Ready to experience this amazing tour? Contact us directly via WhatsApp to check availability and make your booking.
+										</p>
+										<a
+											href={`https://wa.me/27728127533?text=I'm%20interested%20in%20booking%20the%20${encodeURIComponent(tour.name)}%20tour`}
+											target="_blank"
+											rel="noopener noreferrer"
+											className="w-full bg-green-500 text-white py-3 rounded-lg flex items-center justify-center font-medium hover:bg-green-600 transition-colors">
+											Book via WhatsApp
+											<ArrowRight className="ml-2 h-5 w-5" />
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

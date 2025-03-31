@@ -304,257 +304,6 @@ export const tourCategories: TourCategory[] = [
         category: "cape-town-day-tours"
       },
       {
-        id: "whale-watching",
-        name: "Hermanus Whale Watching",
-        slug: "whale-watching-tour",
-        description: "Experience the majestic Southern Right Whales in Hermanus (June-December).",
-        longDescription: "Join us on a whale watching tour in Hermanus, where you'll have the opportunity to see these magnificent creatures in their natural habitat.",
-        image: "/tours/whale-watching.jpg",
-        gallery: [
-          "/tours/whale-watching/whales.jpg",
-          "/tours/whale-watching/boat.jpg"
-        ],
-        duration: "Full Day (8-9 hours)",
-        groupSize: "1-7 people",
-        startTime: "07:00",
-        meetingPoint: "Your accommodation in Cape Town",
-        highlights: [
-          "Whale watching",
-          "Hermanus village exploration",
-          "Scenic coastal drive",
-          "Panoramic views of the ocean"
-        ],
-        itinerary: [
-          {
-            time: "07:00",
-            description: "Pick up from your accommodation",
-            location: "Cape Town",
-          },
-          {
-            time: "08:00",
-            description: "Drive to Hermanus",
-            location: "Cape Town to Hermanus",
-            image: "/tours/whale-watching/drive.jpg"
-          },
-          {
-            time: "09:00",
-            description: "Whale watching",
-            location: "Hermanus",
-            image: "/tours/whale-watching/whales.jpg"
-          },
-          {
-            time: "10:00",
-            description: "Hermanus village exploration",
-            location: "Hermanus",
-            image: "/tours/whale-watching/village.jpg"
-          },
-          {
-            time: "11:00",
-            description: "Scenic coastal drive",
-            location: "Hermanus to Cape Town",
-            image: "/tours/whale-watching/drive.jpg"
-          },
-          {
-            time: "12:00",
-            description: "Return to Cape Town",
-            location: "Cape Town"
-          }
-        ],
-        includes: [
-          "Professional guide",
-          "Air-conditioned vehicle",
-          "Entrance fees (whale watching boat)",
-          "Bottled water"
-        ],
-        excludes: [
-          "Additional meals and drinks",
-          "Gratuities (optional)",
-          "Travel insurance"
-        ],
-        notes: [
-          "Tour operates daily, weather permitting",
-          "Comfortable walking shoes recommended",
-          "Bring sunscreen and camera",
-          "Child rates available for 2-11 years"
-        ],
-        available: true,
-        category: "cape-town-day-tours"
-      },
-      {
-        id: "city-culture",
-        name: "City & Cultural Tour",
-        slug: "city-cultural-tour",
-        description: "Discover Cape Town's rich history and vibrant culture",
-        longDescription: "Immerse yourself in Cape Town's diverse cultural heritage. Visit historic sites, colorful neighborhoods, and experience local traditions.",
-        image: "/tours/city-culture.jpg",
-        gallery: [
-          "/tours/city-culture/bo-kaap.jpg",
-          "/tours/city-culture/district-six.jpg",
-          "/tours/city-culture/castle.jpg"
-        ],
-        duration: "Full Day (8 hours)",
-        groupSize: "2-10 people",
-        startTime: "09:00",
-        meetingPoint: "Your accommodation in Cape Town",
-        highlights: [
-          "Bo-Kaap Cooking Experience",
-          "District Six Museum",
-          "Castle of Good Hope",
-          "Traditional African Dance Show",
-          "Local Market Visit",
-          "Township Art Gallery"
-        ],
-        itinerary: [
-          {
-            time: "09:00",
-            description: "Pick up from your accommodation",
-            location: "Cape Town",
-          },
-          {
-            time: "10:00",
-            description: "Visit Bo-Kaap",
-            location: "Bo-Kaap",
-            image: "/tours/city-culture/bo-kaap.jpg"
-          },
-          {
-            time: "11:00",
-            description: "Visit District Six Museum",
-            location: "District Six",
-            image: "/tours/city-culture/district-six.jpg"
-          },
-          {
-            time: "12:00",
-            description: "Visit Castle of Good Hope",
-            location: "Castle of Good Hope",
-            image: "/tours/city-culture/castle.jpg"
-          },
-          {
-            time: "13:00",
-            description: "Traditional African Dance Show",
-            location: "Cape Town",
-            image: "/tours/city-culture/dance.jpg"
-          },
-          {
-            time: "14:00",
-            description: "Local Market Visit",
-            location: "Cape Town",
-            image: "/tours/city-culture/market.jpg"
-          },
-          {
-            time: "15:00",
-            description: "Township Art Gallery",
-            location: "Cape Town",
-            image: "/tours/city-culture/gallery.jpg"
-          },
-          {
-            time: "16:00",
-            description: "Return to Cape Town",
-            location: "Cape Town"
-          }
-        ],
-        includes: [
-          "Professional guide",
-          "Air-conditioned vehicle",
-          "Entrance fees (historic sites)",
-          "Bottled water"
-        ],
-        excludes: [
-          "Additional meals and drinks",
-          "Gratuities (optional)",
-          "Travel insurance"
-        ],
-        notes: [
-          "Tour operates daily, weather permitting",
-          "Comfortable walking shoes recommended",
-          "Bring sunscreen and camera",
-          "Child rates available for 2-11 years"
-        ],
-        available: true,
-        category: "cape-town-day-tours"
-      },
-      {
-        id: "township-cultural",
-        name: "Township Cultural Tour",
-        slug: "township-cultural-tour",
-        description: "Experience the vibrant culture and history of Cape Town's townships",
-        longDescription: "Gain insight into South Africa's history and experience the vibrant culture of Cape Town's townships. Meet local entrepreneurs, visit community projects, and enjoy traditional African cuisine.",
-        image: "/tours/township.jpg",
-        gallery: [
-          "/tours/township/community.jpg",
-          "/tours/township/art.jpg",
-          "/tours/township/food.jpg"
-        ],
-        duration: "Half Day (4-5 hours)",
-        groupSize: "2-10 people",
-        startTime: "09:00",
-        meetingPoint: "Your accommodation in Cape Town",
-        highlights: [
-          "Visit Langa - Cape Town's oldest township",
-          "Meet local entrepreneurs",
-          "Traditional African lunch",
-          "Community art projects",
-          "Local music and dance",
-          "Craft markets"
-        ],
-        itinerary: [
-          {
-            time: "09:00",
-            description: "Pick up from your accommodation",
-            location: "Cape Town"
-          },
-          {
-            time: "09:30",
-            description: "District Six Museum visit - Learn about forced removals during apartheid",
-            location: "District Six",
-            image: "/tours/township/district-six.jpg"
-          },
-          {
-            time: "10:30",
-            description: "Langa Township - Visit local craft markets and meet artisans",
-            location: "Langa",
-            image: "/tours/township/crafts.jpg"
-          },
-          {
-            time: "11:30",
-            description: "Community development projects tour",
-            location: "Langa",
-            image: "/tours/township/community.jpg"
-          },
-          {
-            time: "12:30",
-            description: "Traditional African lunch at a local restaurant",
-            location: "Langa",
-            image: "/tours/township/food.jpg"
-          },
-          {
-            time: "13:30",
-            description: "Visit Guga S'thebe Arts & Culture Centre",
-            location: "Langa",
-            image: "/tours/township/arts.jpg"
-          },
-          {
-            time: "14:30",
-            description: "Return to Cape Town",
-            location: "Cape Town"
-          }
-        ],
-        includes: [
-          "Professional local guide",
-          "Transport in air-conditioned vehicle",
-          "District Six Museum entrance",
-          "Traditional African lunch",
-          "Community project donations",
-          "Hotel pickup and drop-off"
-        ],
-        excludes: [
-          "Additional beverages",
-          "Gratuities (optional)",
-          "Craft market purchases"
-        ],
-        available: true,
-        category: "cape-town-day-tours"
-      },
-      {
         id: "premium-wine-experience",
         name: "Premium Wine Experience",
         slug: "premium-wine-experience",
@@ -645,6 +394,162 @@ export const tourCategories: TourCategory[] = [
           "Comfortable walking shoes recommended",
           "Bring sunscreen and camera",
           "Child rates available for 2-11 years"
+        ],
+        available: true,
+        category: "cape-town-day-tours"
+      },
+      {
+        id: "bo-kaap-tour",
+        name: "Bo-Kaap Museum & Malay Cultural Tour",
+        slug: "bo-kaap-museum-tour",
+        description: "Explore the colorful Bo-Kaap neighborhood and discover Cape Malay culture and history.",
+        longDescription: "Immerse yourself in the vibrant Bo-Kaap neighborhood, known for its colorful houses and rich Cape Malay heritage. Visit the Bo-Kaap Museum, learn about the area's fascinating history, and experience authentic Cape Malay cuisine and culture.",
+        image: "/tours/bo-kaap/bo-kaap.jpg",
+        gallery: [
+          "/tours/bo-kaap/bo-kaap2.jpg",
+          "/tours/bo-kaap/bo-kaap3.jpg",
+          "/tours/bo-kaap/bo-kaap4.jpg",
+          "/tours/bo-kaap/bo-kaap5.jpg"
+        ],
+        duration: "Half Day (4-5 hours)",
+        groupSize: "2-10 people",
+        startTime: "09:00",
+        meetingPoint: "Your accommodation in Cape Town",
+        highlights: [
+          "Bo-Kaap Museum guided tour",
+          "Walking tour of colorful houses",
+          "Cape Malay cultural experience",
+          "Traditional Cape Malay cooking demonstration",
+          "Local spice shop visit",
+          "Historical mosque visit (exterior only)"
+        ],
+        itinerary: [
+          {
+            time: "09:00",
+            description: "Pick up from your accommodation",
+            location: "Cape Town"
+          },
+          {
+            time: "09:30",
+            description: "Bo-Kaap Museum guided tour",
+            location: "Bo-Kaap",
+            image: "/tours/bo-kaap/museum.jpg"
+          },
+          {
+            time: "10:30",
+            description: "Walking tour of the colorful neighborhood",
+            location: "Bo-Kaap",
+            image: "/tours/bo-kaap/houses.jpg"
+          },
+          {
+            time: "11:30",
+            description: "Visit to local spice shop",
+            location: "Bo-Kaap",
+            image: "/tours/bo-kaap/spices.jpg"
+          },
+          {
+            time: "12:00",
+            description: "Cape Malay cooking demonstration",
+            location: "Bo-Kaap",
+            image: "/tours/bo-kaap/food.jpg"
+          },
+          {
+            time: "13:00",
+            description: "Return to Cape Town",
+            location: "Cape Town"
+          }
+        ],
+        includes: [
+          "Professional guide",
+          "Bo-Kaap Museum entrance fee",
+          "Cape Malay cooking demonstration",
+          "Bottled water",
+          "Hotel pickup and drop-off"
+        ],
+        excludes: [
+          "Additional food and beverages",
+          "Gratuities (optional)"
+        ],
+        available: true,
+        category: "cape-town-day-tours"
+      },
+      {
+        id: "boulders-beach-tour",
+        name: "Boulders Beach Penguin Colony",
+        slug: "boulders-beach-penguin-tour",
+        description: "Get up close with African penguins at the famous Boulders Beach colony.",
+        longDescription: "Visit the world-famous Boulders Beach penguin colony, home to thousands of endangered African penguins. Walk along the wooden boardwalks for incredible viewing opportunities and learn about conservation efforts to protect these charismatic birds.",
+        image: "/tours/boulders-beach/boulder1.jpg",
+        gallery: [
+          "/tours/boulders-beach/boulder2.jpg",
+          "/tours/boulders-beach/boulder3.jpg",
+          "/tours/boulders-beach/boulder4.jpg",
+          "/tours/boulders-beach/boulder5.jpg"
+        ],
+        duration: "Half Day (5-6 hours)",
+        groupSize: "2-10 people",
+        startTime: "09:00",
+        meetingPoint: "Your accommodation in Cape Town",
+        highlights: [
+          "African penguin colony viewing",
+          "Wooden boardwalk experience",
+          "Conservation presentation",
+          "Simon's Town historical visit",
+          "Scenic coastal drive",
+          "Optional swimming at Seaforth Beach"
+        ],
+        itinerary: [
+          {
+            time: "09:00",
+            description: "Pick up from your accommodation",
+            location: "Cape Town"
+          },
+          {
+            time: "10:00",
+            description: "Scenic coastal drive along False Bay",
+            location: "False Bay",
+            image: "/tours/boulders-beach/coastal-drive.jpg"
+          },
+          {
+            time: "10:30",
+            description: "Visit Simon's Town historical mile",
+            location: "Simon's Town",
+            image: "/tours/boulders-beach/simons-town.jpg"
+          },
+          {
+            time: "11:00",
+            description: "Boulders Beach penguin colony visit",
+            location: "Boulders Beach",
+            image: "/tours/boulders-beach/penguins1.jpg"
+          },
+          {
+            time: "12:00",
+            description: "Conservation presentation",
+            location: "Boulders Beach",
+            image: "/tours/boulders-beach/conservation.jpg"
+          },
+          {
+            time: "12:30",
+            description: "Optional swimming at Seaforth Beach",
+            location: "Seaforth Beach",
+            image: "/tours/boulders-beach/seaforth.jpg"
+          },
+          {
+            time: "13:30",
+            description: "Return to Cape Town",
+            location: "Cape Town"
+          }
+        ],
+        includes: [
+          "Professional guide",
+          "Boulders Beach conservation fee",
+          "Bottled water",
+          "Hotel pickup and drop-off"
+        ],
+        excludes: [
+          "Lunch and additional beverages",
+          "Gratuities (optional)",
+          "Swimming equipment"
         ],
         available: true,
         category: "cape-town-day-tours"
@@ -1156,6 +1061,963 @@ export const tourCategories: TourCategory[] = [
         ],
         available: true,
         category: "adventure-tours"
+      },
+      {
+        id: "atlantis-quad-biking",
+        name: "Atlantis Dunes Quad Biking Adventure",
+        slug: "atlantis-dunes-quad-biking",
+        description: "Experience the thrill of quad biking through the magnificent Atlantis sand dunes.",
+        longDescription: "Get your adrenaline pumping with an exciting quad biking adventure through the stunning Atlantis sand dunes. After a safety briefing and practice session, you'll navigate the rolling dunes with an experienced guide, enjoying spectacular views and photo opportunities.",
+        image: "/tours/quad-biking/quad5.jpg",
+        gallery: [
+          "/tours/quad-biking/quad2.jpg",
+          "/tours/quad-biking/quad1.jpg",
+          "/tours/quad-biking/quad3.jpg",
+          "/tours/quad-biking/quad4.jpg",
+          "/tours/quad-biking/quad6.jpg"
+        ],
+        duration: "Half Day (4-5 hours)",
+        groupSize: "2-10 people",
+        startTime: "08:00 or 13:00",
+        meetingPoint: "Your accommodation in Cape Town",
+        highlights: [
+          "Quad biking through sand dunes",
+          "Professional safety equipment",
+          "Experienced guides",
+          "Stunning photo opportunities",
+          "No previous experience required",
+          "Optional sandboarding"
+        ],
+        itinerary: [
+          {
+            time: "08:00",
+            description: "Pick up from your accommodation",
+            location: "Cape Town"
+          },
+          {
+            time: "09:00",
+            description: "Arrival at Atlantis Dunes",
+            location: "Atlantis",
+            image: "/tours/quad-biking/arrival.jpg"
+          },
+          {
+            time: "09:15",
+            description: "Safety briefing and equipment fitting",
+            location: "Atlantis",
+            image: "/tours/quad-biking/briefing.jpg"
+          },
+          {
+            time: "09:45",
+            description: "Practice session on the quad bikes",
+            location: "Atlantis",
+            image: "/tours/quad-biking/practice.jpg"
+          },
+          {
+            time: "10:15",
+            description: "Guided quad biking tour through the dunes",
+            location: "Atlantis Dunes",
+            image: "/tours/quad-biking/dunes1.jpg"
+          },
+          {
+            time: "11:30",
+            description: "Photo opportunities and refreshments",
+            location: "Atlantis Dunes",
+            image: "/tours/quad-biking/photos.jpg"
+          },
+          {
+            time: "12:00",
+            description: "Return to base camp",
+            location: "Atlantis"
+          },
+          {
+            time: "12:30",
+            description: "Return to Cape Town",
+            location: "Cape Town"
+          }
+        ],
+        includes: [
+          "Professional guide",
+          "Quad bike rental",
+          "Safety equipment (helmet, goggles)",
+          "Safety briefing",
+          "Bottled water",
+          "Hotel pickup and drop-off"
+        ],
+        excludes: [
+          "Additional activities (sandboarding)",
+          "Gratuities (optional)",
+          "Photos/videos (available for purchase)"
+        ],
+        available: true,
+        category: "adventure-tours"
+      }
+    ]
+  },
+  {
+    id: "garden-route-tours",
+    name: "Garden Route Tours",
+    description: "Explore South Africa's scenic Garden Route with guided tours and safari experiences",
+    image: "/tours/garden-route.jpg",
+    slug: "garden-route-tours",
+    tours: [
+      {
+        id: "garden-route-highlights",
+        name: "Garden Route Highlights",
+        slug: "garden-route-highlights-tour",
+        description: "Experience the best of the Garden Route in this comprehensive tour.",
+        longDescription: "Discover the natural beauty of South Africa's Garden Route with this comprehensive tour covering all the major highlights. From pristine beaches to ancient forests, this tour showcases the region's diverse landscapes and attractions.",
+        image: "/tours/garden-route/overview.jpg",
+        gallery: [
+          "/tours/garden-route/bungy.jpg",
+          "/tours/garden-route/wilderness.jpg",
+          "/tours/garden-route/knysna.jpg",
+          "/tours/garden-route/wildlife.jpg"
+        ],
+        duration: "3 Days",
+        groupSize: "2-12 people",
+        startTime: "07:00",
+        meetingPoint: "Your accommodation in Cape Town",
+        highlights: [
+          "Knysna Lagoon cruise",
+          "Tsitsikamma National Park",
+          "Plettenberg Bay beaches",
+          "Oudtshoorn ostrich farms",
+          "Cango Caves exploration",
+          "Wilderness National Park"
+        ],
+        itinerary: [
+          {
+            time: "Day 1",
+            description: "Cape Town to Oudtshoorn via Route 62",
+            location: "Oudtshoorn",
+            image: "/tours/garden-route/route62.jpg"
+          },
+          {
+            time: "Day 1",
+            description: "Visit Cango Caves and ostrich farm",
+            location: "Oudtshoorn",
+            image: "/tours/garden-route/cango-caves.jpg"
+          },
+          {
+            time: "Day 2",
+            description: "Oudtshoorn to Knysna",
+            location: "Knysna",
+            image: "/tours/garden-route/knysna-drive.jpg"
+          },
+          {
+            time: "Day 2",
+            description: "Knysna Lagoon cruise and Knysna Heads viewpoint",
+            location: "Knysna",
+            image: "/tours/garden-route/knysna-heads.jpg"
+          },
+          {
+            time: "Day 3",
+            description: "Tsitsikamma National Park and Storms River",
+            location: "Tsitsikamma",
+            image: "/tours/garden-route/storms-river.jpg"
+          },
+          {
+            time: "Day 3",
+            description: "Return to Cape Town",
+            location: "Cape Town"
+          }
+        ],
+        includes: [
+          "Professional guide",
+          "Transportation in air-conditioned vehicle",
+          "2 nights accommodation",
+          "Breakfast daily",
+          "All entrance fees",
+          "Knysna Lagoon cruise",
+          "Cango Caves tour"
+        ],
+        excludes: [
+          "Lunches and dinners",
+          "Additional activities",
+          "Gratuities (optional)",
+          "Personal expenses"
+        ],
+        available: true,
+        category: "garden-route-tours"
+      },
+      {
+        id: "garden-game-safari",
+        name: "Garden Route Game Lodge Safari",
+        slug: "garden-route-game-lodge-safari",
+        description: "Experience an authentic African safari at the Garden Route Game Lodge.",
+        longDescription: "Enjoy a memorable safari experience at the Garden Route Game Lodge, where you can spot the Big Five and other wildlife in their natural habitat. This private game reserve offers comfortable accommodation, guided game drives, and authentic African cuisine.",
+        image: "/tours/garden-game/game-main.jpg",
+        gallery: [
+          "/tours/garden-game/game1.jpg",
+          "/tours/garden-game/game2.jpg",
+          "/tours/garden-game/game3.jpg",
+          "/tours/garden-game/game4.jpg",
+          "/tours/garden-game/game5.jpg",
+          "/tours/garden-game/game6.jpg",
+          "/tours/garden-game/game7.jpg",
+          "/tours/garden-game/game8.jpg"
+        ],
+        duration: "2 Days",
+        groupSize: "2-10 people",
+        startTime: "08:00",
+        meetingPoint: "Your accommodation in Cape Town",
+        highlights: [
+          "Big Five game drives",
+          "Luxury lodge accommodation",
+          "Professional safari guides",
+          "African-inspired meals",
+          "Sunset safari experience",
+          "Educational wildlife center"
+        ],
+        itinerary: [
+          {
+            time: "Day 1",
+            description: "Departure from Cape Town",
+            location: "Cape Town",
+            image: "/tours/garden-game/departure.jpg"
+          },
+          {
+            time: "Day 1",
+            description: "Arrival and check-in at Garden Route Game Lodge",
+            location: "Garden Route Game Lodge",
+            image: "/tours/garden-game/arrival.jpg"
+          },
+          {
+            time: "Day 1",
+            description: "Afternoon game drive",
+            location: "Garden Route Game Lodge",
+            image: "/tours/garden-game/afternoon-drive.jpg"
+          },
+          {
+            time: "Day 1",
+            description: "Dinner at the lodge",
+            location: "Garden Route Game Lodge",
+            image: "/tours/garden-game/dinner.jpg"
+          },
+          {
+            time: "Day 2",
+            description: "Early morning game drive",
+            location: "Garden Route Game Lodge",
+            image: "/tours/garden-game/morning-drive.jpg"
+          },
+          {
+            time: "Day 2",
+            description: "Breakfast and check-out",
+            location: "Garden Route Game Lodge",
+            image: "/tours/garden-game/breakfast.jpg"
+          },
+          {
+            time: "Day 2",
+            description: "Return to Cape Town",
+            location: "Cape Town",
+            image: "/tours/garden-game/return.jpg"
+          }
+        ],
+        includes: [
+          "Professional safari guide",
+          "Transportation in air-conditioned vehicle",
+          "1 night accommodation",
+          "All meals",
+          "2 game drives",
+          "Conservation fees"
+        ],
+        excludes: [
+          "Alcoholic beverages",
+          "Additional activities",
+          "Gratuities (optional)",
+          "Personal expenses"
+        ],
+        available: true,
+        category: "garden-route-tours"
+      }
+    ]
+  },
+  {
+    id: "cape-town-safari",
+    name: "Cape Town Safari",
+    description: "Experience African wildlife with day trips from Cape Town to private game reserves",
+    image: "/tours/safari/main.jpg",
+    slug: "cape-town-safari",
+    tours: [
+      {
+        id: "aquila",
+        name: "Aquila Private Game Reserve",
+        slug: "aquila-private-game-reserve",
+        description: "Full day safari experience at Aquila Private Game Reserve with Big Five viewing opportunities.",
+        longDescription: "Just a 2-hour drive from Cape Town, Aquila Private Game Reserve offers an authentic African safari experience. Spot the Big Five (lion, elephant, buffalo, leopard, and rhino) on guided game drives through 10,000 hectares of natural wilderness. Enjoy luxury facilities and a gourmet buffet lunch between morning and afternoon game drives.",
+        image: "/tours/aquila/aquila1.jpg",
+        gallery: [
+          "/tours/aquila/aquila2.jpg",
+          "/tours/aquila/aquila3.jpg",
+          "/tours/aquila/aquila4.jpg",
+          "/tours/aquila/aquila5.jpg",
+          "/tours/aquila/aquila6.jpg",
+          "/tours/aquila/aquila7.jpg"
+        ],
+        duration: "Full Day (10-12 hours)",
+        groupSize: "2-10 people",
+        startTime: "06:00",
+        meetingPoint: "Your accommodation in Cape Town",
+        highlights: [
+          "Big Five game viewing",
+          "Guided safari drives",
+          "Gourmet buffet lunch",
+          "Luxury lodge facilities",
+          "Optional horseback safari",
+          "Conservation center visit"
+        ],
+        itinerary: [
+          {
+            time: "06:00",
+            description: "Early morning departure from Cape Town",
+            location: "Cape Town"
+          },
+          {
+            time: "08:00",
+            description: "Arrival at Aquila Private Game Reserve",
+            location: "Aquila",
+            image: "/tours/safari/aquila/arrival.jpg"
+          },
+          {
+            time: "08:30",
+            description: "Welcome drinks and briefing",
+            location: "Aquila",
+            image: "/tours/safari/aquila/welcome.jpg"
+          },
+          {
+            time: "09:00",
+            description: "Morning game drive in safari vehicles",
+            location: "Aquila",
+            image: "/tours/safari/aquila/game-drive.jpg"
+          },
+          {
+            time: "12:00",
+            description: "Buffet lunch at the lodge",
+            location: "Aquila",
+            image: "/tours/safari/aquila/lunch.jpg"
+          },
+          {
+            time: "14:00",
+            description: "Afternoon game drive or optional activities",
+            location: "Aquila",
+            image: "/tours/safari/aquila/afternoon-drive.jpg"
+          },
+          {
+            time: "16:00",
+            description: "Return journey to Cape Town",
+            location: "Aquila"
+          },
+          {
+            time: "18:00",
+            description: "Arrival in Cape Town",
+            location: "Cape Town"
+          }
+        ],
+        includes: [
+          "Return transfers from Cape Town",
+          "Welcome drinks",
+          "Two game drives",
+          "Buffet lunch",
+          "Conservation levy",
+          "Professional guide"
+        ],
+        excludes: [
+          "Additional beverages",
+          "Optional activities",
+          "Gratuities (optional)",
+          "Personal expenses"
+        ],
+        available: true,
+        category: "cape-town-safari"
+      },
+      {
+        id: "buffelsdrift",
+        name: "Buffelsdrift Game Lodge",
+        slug: "buffelsdrift-game-lodge",
+        description: "Luxury safari experience at Buffelsdrift with close encounters with elephants.",
+        longDescription: "Located near Oudtshoorn, Buffelsdrift Game Lodge offers a luxurious safari experience in a stunning environment. The highlight is the unique elephant experience, where you can interact with rescued elephants. Enjoy game drives, bush safaris, and luxury tented accommodation overlooking a natural waterhole.",
+        image: "/tours/bufflesdrift/buffle-main.jpg",
+        gallery: [
+          "/tours/bufflesdrift/buffle1.jpg",
+          "/tours/bufflesdrift/buffle2.jpg",
+          "/tours/bufflesdrift/buffle3.jpg",
+          "/tours/bufflesdrift/buffle4.jpg"
+        ],
+        duration: "2 Days",
+        groupSize: "2-8 people",
+        startTime: "07:00",
+        meetingPoint: "Your accommodation in Cape Town",
+        highlights: [
+          "Elephant interaction experience",
+          "Luxury tented accommodation",
+          "Waterhole viewing deck",
+          "Game drives",
+          "Meerkat safari",
+          "Bush spa treatments"
+        ],
+        itinerary: [
+          {
+            time: "Day 1",
+            description: "Morning departure from Cape Town",
+            location: "Cape Town"
+          },
+          {
+            time: "Day 1",
+            description: "Scenic drive through Klein Karoo",
+            location: "Route 62",
+            image: "/tours/safari/buffelsdrift/route.jpg"
+          },
+          {
+            time: "Day 1",
+            description: "Arrival and check-in at Buffelsdrift",
+            location: "Oudtshoorn",
+            image: "/tours/safari/buffelsdrift/arrival.jpg"
+          },
+          {
+            time: "Day 1",
+            description: "Elephant interaction experience",
+            location: "Buffelsdrift",
+            image: "/tours/safari/buffelsdrift/elephant-interaction.jpg"
+          },
+          {
+            time: "Day 1",
+            description: "Evening game drive and dinner",
+            location: "Buffelsdrift",
+            image: "/tours/safari/buffelsdrift/evening-drive.jpg"
+          },
+          {
+            time: "Day 2",
+            description: "Early morning meerkat safari",
+            location: "Buffelsdrift",
+            image: "/tours/safari/buffelsdrift/meerkat.jpg"
+          },
+          {
+            time: "Day 2",
+            description: "Breakfast and departure",
+            location: "Buffelsdrift"
+          },
+          {
+            time: "Day 2",
+            description: "Return to Cape Town",
+            location: "Cape Town"
+          }
+        ],
+        includes: [
+          "Transportation in luxury vehicle",
+          "1 night luxury tented accommodation",
+          "All meals",
+          "Elephant interaction",
+          "2 game drives",
+          "Meerkat safari",
+          "Professional guide"
+        ],
+        excludes: [
+          "Alcoholic beverages",
+          "Spa treatments",
+          "Gratuities (optional)",
+          "Personal expenses"
+        ],
+        available: true,
+        category: "cape-town-safari"
+      },
+      {
+        id: "gondwana",
+        name: "Gondwana Game Reserve",
+        slug: "gondwana-game-reserve",
+        description: "Luxury Big Five safari experience on a 11,000-hectare private game reserve.",
+        longDescription: "Gondwana Game Reserve offers an authentic safari experience just 4 hours from Cape Town. The 11,000-hectare private reserve is home to the Big Five and endangered species like the Cape Mountain Zebra. Stay in luxury accommodation and enjoy guided game drives, bush walks, and gourmet dining in a malaria-free environment.",
+        image: "/tours/gondwana/gondowa-main.jpg",
+        gallery: [
+          "/tours/gondwana/gondowa1.jpg",
+          "/tours/gondwana/gondowa2.jpg",
+          "/tours/gondwana/gondowa3.jpg",
+          "/tours/gondwana/gondowa4.jpg"
+        ],
+        duration: "3 Days",
+        groupSize: "2-10 people",
+        startTime: "08:00",
+        meetingPoint: "Your accommodation in Cape Town",
+        highlights: [
+          "Big Five safari experience",
+          "Luxury lodge accommodation",
+          "Guided bush walks",
+          "Gourmet dining",
+          "Sundowner experiences",
+          "Fynbos conservation area"
+        ],
+        itinerary: [
+          {
+            time: "Day 1",
+            description: "Morning departure from Cape Town",
+            location: "Cape Town"
+          },
+          {
+            time: "Day 1",
+            description: "Scenic drive along the Garden Route",
+            location: "Garden Route",
+            image: "/tours/safari/gondwana/drive.jpg"
+          },
+          {
+            time: "Day 1",
+            description: "Arrival and welcome at Gondwana",
+            location: "Gondwana",
+            image: "/tours/safari/gondwana/welcome.jpg"
+          },
+          {
+            time: "Day 1",
+            description: "Evening game drive and sundowners",
+            location: "Gondwana",
+            image: "/tours/safari/gondwana/evening-drive.jpg"
+          },
+          {
+            time: "Day 2",
+            description: "Early morning game drive",
+            location: "Gondwana",
+            image: "/tours/safari/gondwana/morning-drive.jpg"
+          },
+          {
+            time: "Day 2",
+            description: "Brunch and leisure time",
+            location: "Gondwana",
+            image: "/tours/safari/gondwana/brunch.jpg"
+          },
+          {
+            time: "Day 2",
+            description: "Guided bush walk",
+            location: "Gondwana",
+            image: "/tours/safari/gondwana/bush-walk.jpg"
+          },
+          {
+            time: "Day 2",
+            description: "Evening game drive",
+            location: "Gondwana"
+          },
+          {
+            time: "Day 3",
+            description: "Final morning game drive",
+            location: "Gondwana"
+          },
+          {
+            time: "Day 3",
+            description: "Breakfast and departure",
+            location: "Gondwana"
+          },
+          {
+            time: "Day 3",
+            description: "Return to Cape Town",
+            location: "Cape Town"
+          }
+        ],
+        includes: [
+          "Transportation in luxury vehicle",
+          "2 nights luxury accommodation",
+          "All meals and selected beverages",
+          "Daily game drives",
+          "Guided bush walk",
+          "Conservation fees",
+          "Professional guide"
+        ],
+        excludes: [
+          "Premium alcoholic beverages",
+          "Spa treatments",
+          "Gratuities (optional)",
+          "Personal expenses"
+        ],
+        available: true,
+        category: "cape-town-safari"
+      },
+      {
+        id: "inverdoorn",
+        name: "Inverdoorn Game Reserve",
+        slug: "inverdoorn-game-reserve",
+        description: "Safari experience with focus on conservation at Inverdoorn Game Reserve.",
+        longDescription: "Inverdoorn Game Reserve, just 2.5 hours from Cape Town, is known for its conservation efforts, particularly the rehabilitation of rescued big cats through the Western Cape Cheetah Conservation. Experience close encounters with wildlife including the Big Five, giraffes, hippos, and cheetahs on guided safari drives.",
+        image: "/tours/inverdoorn/inverdoorn-main.jpg",
+        gallery: [
+          "/tours/inverdoorn/inverdoorn1.jpg",
+          "/tours/inverdoorn/inverdoorn2.jpg",
+          "/tours/inverdoorn/inverdoorn3.jpg",
+          "/tours/inverdoorn/inverdoorn4.jpg",
+          "/tours/inverdoorn/inverdoorn5.jpg",
+          "/tours/inverdoorn/inverdoorn6.jpg"
+        ],
+        duration: "Full Day or Overnight",
+        groupSize: "2-10 people",
+        startTime: "06:30",
+        meetingPoint: "Your accommodation in Cape Town",
+        highlights: [
+          "Big Five game viewing",
+          "Cheetah conservation program",
+          "Expert wildlife guides",
+          "Luxury accommodation options",
+          "Swimming pool",
+          "Spectacular Karoo landscape"
+        ],
+        itinerary: [
+          {
+            time: "06:30",
+            description: "Early morning departure from Cape Town",
+            location: "Cape Town"
+          },
+          {
+            time: "09:00",
+            description: "Arrival at Inverdoorn Game Reserve",
+            location: "Inverdoorn",
+            image: "/tours/safari/inverdoorn/arrival.jpg"
+          },
+          {
+            time: "09:30",
+            description: "Welcome drinks and check-in",
+            location: "Inverdoorn",
+            image: "/tours/safari/inverdoorn/welcome.jpg"
+          },
+          {
+            time: "10:00",
+            description: "Morning game drive",
+            location: "Inverdoorn",
+            image: "/tours/safari/inverdoorn/game-drive.jpg"
+          },
+          {
+            time: "13:00",
+            description: "Lunch at the lodge",
+            location: "Inverdoorn",
+            image: "/tours/safari/inverdoorn/lunch.jpg"
+          },
+          {
+            time: "14:30",
+            description: "Cheetah conservation program presentation",
+            location: "Inverdoorn",
+            image: "/tours/safari/inverdoorn/cheetah-program.jpg"
+          },
+          {
+            time: "16:00",
+            description: "Evening game drive",
+            location: "Inverdoorn"
+          },
+          {
+            time: "18:00",
+            description: "Return journey to Cape Town (day option)",
+            location: "Inverdoorn"
+          }
+        ],
+        includes: [
+          "Return transfers from Cape Town",
+          "Welcome drinks",
+          "Game drives",
+          "Lunch",
+          "Conservation levy",
+          "Professional guide"
+        ],
+        excludes: [
+          "Overnight accommodation (optional)",
+          "Additional beverages",
+          "Gratuities (optional)",
+          "Personal expenses"
+        ],
+        available: true,
+        category: "cape-town-safari"
+      },
+      {
+        id: "sanbona",
+        name: "Sanbona Wildlife Reserve",
+        slug: "sanbona-wildlife-reserve",
+        description: "Premium safari experience in the heart of Little Karoo with free-roaming Big Five.",
+        longDescription: "Sanbona Wildlife Reserve offers an exclusive safari experience in the heart of the Little Karoo, just 3 hours from Cape Town. This 58,000-hectare reserve is home to the Big Five and rare white lions. Experience luxury accommodation, expert-guided safari drives, and breathtaking landscapes including rock formations with ancient San rock art.",
+        image: "/tours/sanbona/san-main.jpg",
+        gallery: [
+          "/tours/sanbona/san1.jpg",
+          "/tours/sanbona/san2.jpg",
+          "/tours/sanbona/san3.jpg",
+          "/tours/sanbona/san4.jpg"
+        ],
+        duration: "2-3 Days",
+        groupSize: "2-8 people",
+        startTime: "08:00",
+        meetingPoint: "Your accommodation in Cape Town",
+        highlights: [
+          "White lion sightings",
+          "Ancient San rock art",
+          "Luxury lodge options",
+          "Expert wildlife guides",
+          "Boat safaris (seasonal)",
+          "Stargazing experiences"
+        ],
+        itinerary: [
+          {
+            time: "Day 1",
+            description: "Morning departure from Cape Town",
+            location: "Cape Town"
+          },
+          {
+            time: "Day 1",
+            description: "Scenic drive through Route 62",
+            location: "Route 62",
+            image: "/tours/safari/sanbona/route.jpg"
+          },
+          {
+            time: "Day 1",
+            description: "Arrival and welcome at Sanbona",
+            location: "Sanbona",
+            image: "/tours/safari/sanbona/welcome.jpg"
+          },
+          {
+            time: "Day 1",
+            description: "Afternoon game drive",
+            location: "Sanbona",
+            image: "/tours/safari/sanbona/afternoon-drive.jpg"
+          },
+          {
+            time: "Day 1",
+            description: "Dinner at the lodge",
+            location: "Sanbona",
+            image: "/tours/safari/sanbona/dinner.jpg"
+          },
+          {
+            time: "Day 2",
+            description: "Early morning game drive",
+            location: "Sanbona",
+            image: "/tours/safari/sanbona/morning-drive.jpg"
+          },
+          {
+            time: "Day 2",
+            description: "Breakfast and leisure time",
+            location: "Sanbona"
+          },
+          {
+            time: "Day 2",
+            description: "Ancient rock art tour",
+            location: "Sanbona",
+            image: "/tours/safari/sanbona/rock-art-tour.jpg"
+          },
+          {
+            time: "Day 2",
+            description: "Afternoon game drive",
+            location: "Sanbona"
+          },
+          {
+            time: "Day 3",
+            description: "Final morning game drive",
+            location: "Sanbona"
+          },
+          {
+            time: "Day 3",
+            description: "Breakfast and departure",
+            location: "Sanbona"
+          },
+          {
+            time: "Day 3",
+            description: "Return to Cape Town",
+            location: "Cape Town"
+          }
+        ],
+        includes: [
+          "Transportation in luxury vehicle",
+          "Luxury lodge accommodation",
+          "All meals and selected beverages",
+          "Twice daily game drives",
+          "Guided nature walks",
+          "Conservation fees",
+          "Professional guide"
+        ],
+        excludes: [
+          "Premium alcoholic beverages",
+          "Spa treatments",
+          "Gratuities (optional)",
+          "Personal expenses"
+        ],
+        available: true,
+        category: "cape-town-safari"
+      }
+    ]
+  },
+  {
+    id: "township-tourism",
+    name: "Township Tourism",
+    description: "Authentic cultural experiences in Cape Town's vibrant townships",
+    image: "/tours/township/main.jpg",
+    slug: "township-tourism",
+    tours: [
+      {
+        id: "khayelitsha",
+        name: "Khayelitsha Cultural Experience",
+        slug: "khayelitsha-cultural-tour",
+        description: "Immersive tour of Khayelitsha township with local guides and community interaction.",
+        longDescription: "Experience Cape Town's largest township, Khayelitsha, with local guides who will share their personal stories and the township's history. Visit community projects, local businesses, and meet residents in this respectful and educational tour that highlights the challenges and triumphs of township life.",
+        image: "/tours/khayelitsha/kha-main.jpg",
+        gallery: [
+          "/tours/khayelitsha/kha1.jpg",
+          "/tours/khayelitsha/kha2.webp",
+          "/tours/khayelitsha/kha3.webp",
+          "/tours/khayelitsha/kha4.webp",
+          "/tours/khayelitsha/kha5.jpg"
+        ],
+        duration: "Half Day (4-5 hours)",
+        groupSize: "2-12 people",
+        startTime: "09:00",
+        meetingPoint: "Your accommodation in Cape Town",
+        highlights: [
+          "Local guide from the community",
+          "Visit to community development projects",
+          "Traditional food tasting",
+          "Local craft shopping",
+          "Visit to a local school (when open)",
+          "Cultural music and dance performance"
+        ],
+        itinerary: [
+          {
+            time: "09:00",
+            description: "Pick up from your accommodation",
+            location: "Cape Town"
+          },
+          {
+            time: "09:45",
+            description: "Arrival in Khayelitsha and introduction",
+            location: "Khayelitsha",
+            image: "/tours/township/khayelitsha/intro.jpg"
+          },
+          {
+            time: "10:00",
+            description: "Visit to a local community center",
+            location: "Khayelitsha",
+            image: "/tours/township/khayelitsha/community-center.jpg"
+          },
+          {
+            time: "11:00",
+            description: "Walking tour through the neighborhood",
+            location: "Khayelitsha",
+            image: "/tours/township/khayelitsha/walking.jpg"
+          },
+          {
+            time: "12:00",
+            description: "Visit to a local business or entrepreneur",
+            location: "Khayelitsha",
+            image: "/tours/township/khayelitsha/business.jpg"
+          },
+          {
+            time: "12:30",
+            description: "Traditional food tasting at a local eatery",
+            location: "Khayelitsha",
+            image: "/tours/township/khayelitsha/food.jpg"
+          },
+          {
+            time: "13:00",
+            description: "Cultural performance",
+            location: "Khayelitsha",
+            image: "/tours/township/khayelitsha/performance.jpg"
+          },
+          {
+            time: "13:30",
+            description: "Return to Cape Town",
+            location: "Cape Town"
+          }
+        ],
+        includes: [
+          "Professional local guide",
+          "Transportation",
+          "Food tasting",
+          "Community project donations",
+          "Bottled water"
+        ],
+        excludes: [
+          "Additional food and beverages",
+          "Souvenirs and crafts",
+          "Gratuities (optional)"
+        ],
+        available: true,
+        category: "township-tourism"
+      },
+      {
+        id: "langa",
+        name: "Langa Township Heritage Tour",
+        slug: "langa-township-tour",
+        description: "Cultural tour of Langa, Cape Town's oldest township with rich heritage and history.",
+        longDescription: "Explore Langa, Cape Town's oldest township established in 1927, and discover its rich cultural heritage and historical significance in South Africa's struggle against apartheid. This tour is led by residents who offer authentic insights into township life past and present, highlighting community resilience and cultural pride.",
+        image: "/tours/langa/langa-main.jpg",
+        gallery: [
+          "/tours/langa/langa1.jpg",
+          "/tours/langa/langa2.jpg",
+          "/tours/langa/langa3.jpg",
+          "/tours/langa/langa4.jpg",
+          "/tours/langa/langa5.jpg",
+          "/tours/langa/langa6.jpg",
+          "/tours/langa/langa7.jpg"
+        ],
+        duration: "Half Day (4 hours)",
+        groupSize: "2-10 people",
+        startTime: "09:30",
+        meetingPoint: "Your accommodation in Cape Town",
+        highlights: [
+          "Guga S'thebe Arts & Cultural Centre",
+          "Historical landmarks from the apartheid era",
+          "Traditional healer (sangoma) visit",
+          "Local crafts market",
+          "Community development initiatives",
+          "Traditional music experience"
+        ],
+        itinerary: [
+          {
+            time: "09:30",
+            description: "Pick up from your accommodation",
+            location: "Cape Town"
+          },
+          {
+            time: "10:00",
+            description: "Arrival in Langa and historical introduction",
+            location: "Langa",
+            image: "/tours/township/langa/introduction.jpg"
+          },
+          {
+            time: "10:30",
+            description: "Visit to Guga S'thebe Arts & Cultural Centre",
+            location: "Langa",
+            image: "/tours/township/langa/arts-center.jpg"
+          },
+          {
+            time: "11:15",
+            description: "Walking tour of historical sites",
+            location: "Langa",
+            image: "/tours/township/langa/historical.jpg"
+          },
+          {
+            time: "12:00",
+            description: "Visit to local home and conversation with residents",
+            location: "Langa",
+            image: "/tours/township/langa/home-visit.jpg"
+          },
+          {
+            time: "12:30",
+            description: "Traditional food tasting",
+            location: "Langa",
+            image: "/tours/township/langa/food.jpg"
+          },
+          {
+            time: "13:00",
+            description: "Music and dance demonstration",
+            location: "Langa",
+            image: "/tours/township/langa/music.jpg"
+          },
+          {
+            time: "13:30",
+            description: "Return to Cape Town",
+            location: "Cape Town"
+          }
+        ],
+        includes: [
+          "Local resident guide",
+          "Transportation",
+          "Entrance to cultural center",
+          "Food tasting",
+          "Community project contribution",
+          "Bottled water"
+        ],
+        excludes: [
+          "Additional food and beverages",
+          "Crafts and souvenirs",
+          "Optional donations",
+          "Gratuities (optional)"
+        ],
+        available: true,
+        category: "township-tourism"
       }
     ]
   }

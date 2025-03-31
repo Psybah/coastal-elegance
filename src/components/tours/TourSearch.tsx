@@ -18,6 +18,17 @@ const TourSearch: React.FC<TourSearchProps> = ({ onSearch }) => {
     }
   };
 
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setSearchTerm(value);
+    
+    if (value.length >= 2) {
+      onSearch(value);
+    } else if (value.length === 0) {
+      onSearch('');
+    }
+  };
+
   const handleCategoryClick = (categorySlug: string) => {
     navigate(`/tours/category/${categorySlug}`);
   };
@@ -29,21 +40,18 @@ const TourSearch: React.FC<TourSearchProps> = ({ onSearch }) => {
           type="text"
           placeholder="Search tours by name or description..."
           value={searchTerm}
-          onChange={(e) => {
-            setSearchTerm(e.target.value);
-            onSearch(e.target.value);
-          }}
-          className="w-full px-4 py-3 pl-12 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-red focus:border-transparent"
+          onChange={handleInputChange}
+          className="w-full px-4 py-3 pl-12 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-red focus:border-transparent text-sm md:text-base"
         />
         <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
       </form>
       
-      <div className="flex flex-wrap gap-3">
+      <div className="flex overflow-x-auto hide-scrollbar py-2 -mx-4 px-4 space-x-2 md:flex-wrap md:space-x-2 md:gap-2">
         {tourCategories.map((category) => (
           <button
             key={category.id}
             onClick={() => handleCategoryClick(category.slug)}
-            className="px-4 py-2 rounded-full text-sm bg-gray-100 hover:bg-brand-red hover:text-white transition-colors"
+            className="flex-none px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm whitespace-nowrap bg-gray-100 hover:bg-brand-red hover:text-white transition-colors"
           >
             {category.name}
           </button>

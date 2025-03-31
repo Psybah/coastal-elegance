@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -29,6 +30,20 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        
+        {/* WhatsApp Floating Button */}
+        <FloatingWhatsApp
+          phoneNumber="+27728127533"
+          accountName="Coastal Elegance Tours"
+          statusMessage="Typically replies within 30 minutes"
+          chatMessage="Hello there! 🤝 How can we help you plan your perfect Cape Town experience?"
+          placeholder="Type your message..."
+          avatar="/logo.png"
+          allowClickAway={true}
+          notification={true}
+          notificationDelay={30}
+          notificationLoop={3}
+        />
       </div>
     </Router>
   );
