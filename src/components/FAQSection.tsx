@@ -24,7 +24,7 @@ const faqs = [
     questions: [
       {
         question: "What types of vehicles are available?",
-        answer: "Our premium fleet includes luxury sedans (Mercedes-Benz E-Class), executive SUVs (Range Rover, BMW X7), and luxury vans (Mercedes-Benz V-Class) for groups. All vehicles are late models with modern amenities, air conditioning, and WiFi."
+        answer: "Our premium fleet includes BMW X6, Mercedes-Benz Vclass and Quantum Bus for groups. All vehicles are late models with modern amenities, air conditioning, and WiFi."
       },
       {
         question: "Are your drivers knowledgeable about the routes?",

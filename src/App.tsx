@@ -11,6 +11,7 @@ import Tours from './pages/Tours';
 import TourDetail from './pages/TourDetail';
 import ScrollToTop from './components/ScrollToTop';
 import TourCategory from './pages/TourCategory';
+import ShuttleService from './pages/ShuttleService';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/tours" element={<Tours />} />
             <Route path="/tours/category/:categorySlug" element={<TourCategory />} />
             <Route path="/tours/:tourSlug" element={<TourDetail />} />
+            <Route path="/shuttle-services" element={<ShuttleService />} />
           </Routes>
         </main>
         <Footer />
@@ -38,7 +40,7 @@ function App() {
           statusMessage="Typically replies within 30 minutes"
           chatMessage="Hello there! 🤝 How can we help you plan your perfect Cape Town experience?"
           placeholder="Type your message..."
-          avatar="/logo.png"
+          avatar="/whatsapp.png"
           allowClickAway={true}
           notification={true}
           notificationDelay={30}

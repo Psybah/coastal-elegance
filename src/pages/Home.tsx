@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, Star, Users, ChevronLeft, ChevronRight, Mountain, Wine, Compass } from 'lucide-react';
+import { ArrowRight, Star, ChevronLeft, ChevronRight, Mountain, Wine, Car, Palmtree } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import PopularTours from '../components/PopularTours';
 import FAQSection from '../components/FAQSection';
@@ -102,26 +102,41 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12 text-brand-brown">Our Premium Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 border-t-4 border-brand-red">
-              <Compass className="h-12 w-12 text-brand-red mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-brand-brown">Private Tours</h3>
-              <p className="text-gray-600">Personalized tours tailored to your interests and schedule.</p>
-            </div>
-            <div className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 border-t-4 border-brand-gold">
-              <Users className="h-12 w-12 text-brand-gold mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-brand-brown">Group Adventures</h3>
-              <p className="text-gray-600">Exciting group tours with expert local guides.</p>
-            </div>
-            <div className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 border-t-4 border-brand-red">
+            <Link 
+              to="/shuttle-services"
+              className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 border-t-4 border-brand-red"
+            >
+              <Car className="h-12 w-12 text-brand-red mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-brand-brown">Shuttle/Airport Transfer</h3>
+              <p className="text-gray-600">Professional transfer services for all your transportation needs in Cape Town.</p>
+            </Link>
+
+            <Link 
+              to="/tours/category/cape-town-safari"
+              className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 border-t-4 border-brand-gold"
+            >
+              <Palmtree className="h-12 w-12 text-brand-gold mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-brand-brown">Cape Town Safari</h3>
+              <p className="text-gray-600">Experience thrilling wildlife encounters at private game reserves.</p>
+            </Link>
+
+            <Link 
+              to="/tours/category/cape-winelands-tours"
+              className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 border-t-4 border-brand-red"
+            >
               <Wine className="h-12 w-12 text-brand-red mb-4" />
               <h3 className="text-xl font-semibold mb-2 text-brand-brown">Wine Tours</h3>
               <p className="text-gray-600">Discover the finest wineries in the Cape Winelands.</p>
-            </div>
-            <div className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 border-t-4 border-brand-gold">
+            </Link>
+
+            <Link 
+              to="/tours/category/adventure-tours"
+              className="p-6 bg-gray-50 rounded-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-2 border-t-4 border-brand-gold"
+            >
               <Mountain className="h-12 w-12 text-brand-gold mb-4" />
               <h3 className="text-xl font-semibold mb-2 text-brand-brown">Adventure Tours</h3>
               <p className="text-gray-600">Thrilling experiences from hiking to shark diving.</p>
-            </div>
+            </Link>
           </div>
         </div>
       </section>

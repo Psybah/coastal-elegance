@@ -573,8 +573,7 @@ export const tourCategories: TourCategory[] = [
         gallery: [
           "/tours/wine/estate1.jpg",
           "/tours/wine/tasting.jpg",
-          "/tours/wine/constantia-vineyards.jpg",
-          "/tours/wine/groot-constantia.jpg"
+          "/tours/wine/stellen.jpg"
         ],
         duration: "Full Day (8-9 hours)",
         groupSize: "2-7 people",
@@ -665,8 +664,9 @@ export const tourCategories: TourCategory[] = [
         image: "/tours/wine.jpg",
         gallery: [
           "/tours/wine/constantia-estate.jpg",
+          "/tours/wine/groot-constantia.jpg",
           "/tours/wine/constantia-vineyards.jpg",
-          "/tours/wine/constantia-tasting.jpg"
+          "/tours/wine/constantia-tasting.jpg"          
         ],
         duration: "Half Day (5-6 hours)",
         groupSize: "2-7 people",
