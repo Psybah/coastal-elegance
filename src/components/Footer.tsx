@@ -58,7 +58,7 @@ const Footer = () => {
               <a href="#" className="hover:text-brand-gold transition" aria-label="Facebook">
                 <Facebook className="h-6 w-6" aria-hidden="true" />
               </a>
-              <a href="#" className="hover:text-brand-gold transition" aria-label="Instagram">
+              <a href="https://www.instagram.com/coastal_elegancetours" className="hover:text-brand-gold transition" aria-label="Instagram">
                 <Instagram className="h-6 w-6" aria-hidden="true" />
               </a>
             </div>
