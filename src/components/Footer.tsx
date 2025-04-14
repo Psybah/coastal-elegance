@@ -58,7 +58,19 @@ const Footer = () => {
               <a href="#" className="hover:text-brand-gold transition" aria-label="Facebook">
                 <Facebook className="h-6 w-6" aria-hidden="true" />
               </a>
-              <a href="https://www.instagram.com/coastal_elegancetours" className="hover:text-brand-gold transition" aria-label="Instagram">
+              <a href="#"
+                 onClick={(e) => {
+                  e.preventDefault();
+                  const appLink = 'instagram://user?username=coastal_elegancetours';
+                  const webLink = 'https://www.instagram.com/coastal_elegancetours';
+                  // Try open in App
+                  window.location.href = appLink;
+                  // fallback to app after slight delay
+                  setTimeout(() => {
+                    window.location.href = webLink;
+                  }, 1000);
+                 }}
+                 className="hover:text-brand-gold transition" aria-label="Instagram">
                 <Instagram className="h-6 w-6" aria-hidden="true" />
               </a>
             </div>
